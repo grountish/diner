@@ -1561,7 +1561,7 @@ div.buttons-menu {
     cursor: pointer;
 }
 
-.activep {
+.active {
     border-bottom: 2px solid #bd8302;
     cursor: pointer;
 }

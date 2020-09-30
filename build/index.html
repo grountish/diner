@@ -144,7 +144,7 @@
       <div id="platos" data-aos="fade" data-aos-delay="400">
         <div class="platos-sections">
          <div id="buttons-platos">
-           <div id="p1" class="activep" onclick="platosSwitcher(1)" >•</div>
+           <div id="p1" class="active" onclick="platosSwitcher(1)" >•</div>
            <div id="p2" onclick="platosSwitcher(2)" >•</div>
            <div id="p3" onclick="platosSwitcher(3)" >•</div> 
            <div id="p4" onclick="platosSwitcher(4)" >•</div> 
@@ -214,7 +214,7 @@
       <div id="menu-display" data-aos="fade" data-aos-delay="400">
         <h2 class="m-5 pt-4 text-center">Conoce nuestros menús de grupo</h2>
         <div id="buttons-container">
-          <div onclick="menuSwitcher(1)" class="buttons-menu activep">1</div>
+          <div onclick="menuSwitcher(1)" class="buttons-menu active">1</div>
           <div onclick="menuSwitcher(2)" class="buttons-menu">2</div>
           <div onclick="menuSwitcher(3)" class="buttons-menu">3</div>
         </div>
@@ -366,7 +366,7 @@
                 <div class="footer-widget">
                   <h3>Polito </h3>
                   <p>Chiringuito Boutique.</p>
-                  <p>Castell de fels</p>
+                  <p>Castelldefels</p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
@@ -434,7 +434,7 @@
         let buttons = document.getElementById('buttons-container').children;
 
         let active = buttons[n]
-        active.classList += " activep"
+        active.classList += " active"
         theRestButtons = [...buttons].filter(x =>x !== active);
         theRestButtons.forEach(x => {
           x.classList = "buttons-menu";
@@ -464,7 +464,7 @@
         let buttons = document.getElementById('buttons-platos').children;
 
         let active = buttons[n]
-        active.classList += " activep"
+        active.classList += " active"
         theRestButtons = [...buttons].filter(x =>x !== active);
         theRestButtons.forEach(x => {
           x.classList = "buttons-platos";
