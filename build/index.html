@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Colorlib Diner</title>
+  <title>Polito</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -35,13 +35,13 @@
 
     <nav class="site-menu">
       <div class="site-menu-inner">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled" id="navlinks">
           <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="menu.html">Our Menu</a></li>
-          <li><a href="blog.html">Our Blog</a></li>
-          <li><a href="reservation.html">Reserve A Table</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="js-site-nav-toggle"><a href="#platoss">Los productos de polito</a></li>
+          <li class="js-site-nav-toggle"><a href="#lugar">El lugar</a></li>
+          <li class="js-site-nav-toggle"><a href="#menu-display">Nuestros menús para grupos</a></li>
+          <li class="js-site-nav-toggle"><a href="#loquenotepuedesperder">Lo que no te puedes perder</a></li>
+          <li class="js-site-nav-toggle"><a href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </nav>
@@ -72,7 +72,8 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-12" data-aos="fade-up">
-                <h2 class="heading" id="main-header">Polito nace de una larga experiencia en restauración que pretende aunar las ganas de
+                <h2 class="heading" id="main-header">Polito nace de una larga experiencia en restauración que pretende
+                  aunar las ganas de
                   disfrutar una propuesta gastronómica con un entorno privilegiado frente al mar.
               </div>
             </div>
@@ -82,413 +83,476 @@
 
       <div class="section services-section">
         <div class="container">
-          
+
           <div class="row"><a href="#platoss">
-            <div class="col-md-6 col-lg-3" data-aos="fade-up">
-              <div class="media feature-icon d-block text-center">
-                <div class="icon">
-                  <span class="flaticon-soup"></span>
+              <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                <div class="media feature-icon d-block text-center">
+                  <div class="icon">
+                    <span ><img class="sectionsIcon strongIcon" src="./img/losprodIcon.png" alt=""></span>
+                  </div>
+                  <div class="media-body">
+                    <h3>Los productos de Polito</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae
+                      facilis
+                      incidunt unde saepe</p>
+                  </div>
                 </div>
-                <div class="media-body">
-                  <h3>Los productos de Polito</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
-                    incidunt unde saepe</p>
-                </div>
-              </div></a>
-            </div>
-            <a href="#lugar">
+            </a>
+          </div>
+          <a href="#lugar">
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="media feature-icon d-block text-center">
                 <div class="icon">
-                  <span class="flaticon-vegetables"></span>
+                  <span ><img class="sectionsIcon strongIcon" src="./img/lugaricon.png" alt=""></span>
                 </div>
                 <div class="media-body">
                   <h3>El Lugar</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
                     incidunt unde saepe</p>
                 </div>
-              </div></a>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <a href="#menu-display">
-              <div class="media feature-icon d-block text-center">
-                <div class="icon">
-                  <span class="flaticon-pancake"></span>
-                </div>
-                <div class="media-body">
-                  <h3>Nuestros Menús para grupos</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
-                    incidunt unde saepe</p>
-                </div>
-              </div></a>
-            </div>
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <a href="#loquenotepuedesperder">
-              <div class="media feature-icon d-block text-center">
-                <div class="icon">
-                  <span class="flaticon-tray"></span>
-                </div>
-                <div class="media-body">
-                  <h3>Lo que no te puedes perder</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
-                    incidunt unde saepe</p>
-                </div>
-              </div></a>
-            </div>
-          </div>
+              </div>
+          </a>
         </div>
-        <div id="platoss"></div>
-      </div> <!-- .section -->
-
-
-      <div id="platos" data-aos="fade" data-aos-delay="400">
-        <div class="platos-sections">
-         <div id="buttons-platos">
-           <div id="p1" class="active" onclick="platosSwitcher(1)" >•</div>
-           <div id="p2" onclick="platosSwitcher(2)" >•</div>
-           <div id="p3" onclick="platosSwitcher(3)" >•</div> 
-           <div id="p4" onclick="platosSwitcher(4)" >•</div> 
-         </div>
-         <div id="img-platos-container">
-           <img src="./img/batch_THE_2745.jpg"  id="img-1" alt="" class="platos-image fadeI">
-           <img src="./img/batch_THE_2875.jpg"  id="img-2" alt="" class="platos-image fadeI">
-           <img src="./img/batch_THE_2951.jpg" id="img-3" alt="" class="platos-image fadeI">
-           <img src="./img/batch_THE_3115.jpg" id="img-4" alt="" class="platos-image fadeI">
-         </div>
-       </div>
-        <div class="platos-sections">
-         <div class="titulo-platos">
-           <h1>Los productos de Polito</h1>
-           <h4>descripcion descripcion descripcion</h4>
-         </div>
-         <div class="description-platos-container" id="description-platos">
-           <div class="description-platos fadeUp" id="platos-1"  >
-             <h4>Pan con Tomate</h4><p>rebanada de pan con medio tomate maduro restregado y aliñado con aceite de oliva, sal y opcionalmente ajo.
-             </p>
-           </div>
-           <div class="description-platos fadeUp" id="platos-2" >
-             <h4>Cazuela de peces fritos</h4><p>ebozando el pescado en harina de almorta o trigo, friéndolo en aceite de oliva y espolvoreándolo con sal como único condimento</p>
-           </div>
-           <div class="description-platos fadeUp" id="platos-3" >
-             <h4>Hamburguesa</h4><p> hecho a base de carne molida o de origen vegetal, aglutinada en forma de filete cocinado a la parrilla o a la plancha, aunque también puede freírse u hornearse.</p>
-           </div>
-           <div class="description-platos fadeUp" id="platos-4" >
-             <h4>Titulo4</h4><p>3descripdescripdescripdescrip descrip descrip</p>
-           </div>
-          
-         </div>
-         <div id="lugar"></div>
-       </div>
-     
-     </div>
-
-      <div class="site-half-wrap d-block d-lg-flex" >
-        <div class="block-half" data-aos="fade">
-          <div class="image-bg-fullwidth" style="background-image: url(img/sitio4.JPG);"></div>
-          <div class="half d-block d-lg-flex">
-            <div class="text">
-              <h2 class="mb-4">El Lugar</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eos quasi,
-                necessitatibus dicta. Temporibus odit sed quisquam commodi, in aut, repellendus porro saepe minus, enim
-                obcaecati fugiat optio eaque odio?</p>
-              <p><a href="#" class="btn btn-primary btn-outline-primary">View All Menu</a></p>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <a href="#menu-display">
+            <div class="media feature-icon d-block text-center">
+              <div class="icon">
+                <span ><img class="sectionsIcon" src="./img/menuIcon.png" alt=""></span>
+              </div>
+              <div class="media-body">
+                <h3>Nuestros Menús para grupos</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
+                  incidunt unde saepe</p>
+              </div>
             </div>
-            <div class="image" style="background-image: url(img/sitio1.JPG)"></div>
-          </div>
+          </a>
         </div>
-        <div class="block-half" data-aos="fade">
-          <div class="half d-block d-lg-flex">
-            <div class="text">
-              <h2 class="mb-4">Master Chef</h2>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eos quasi,
-                necessitatibus dicta. Temporibus odit sed quisquam commodi, in aut, repellendus porro saepe minus, enim
-                obcaecati fugiat optio eaque odio?</p>
-              <p><a href="#" class="btn btn-primary btn-outline-primary">Meet Our chef</a></p>
+        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <a href="#loquenotepuedesperder">
+            <div class="media feature-icon d-block text-center">
+              <div class="icon">
+                <span ><img class="sectionsIcon" src="./img/heart.png" alt=""></span>
+              </div>
+              <div class="media-body">
+                <h3>Lo que no te puedes perder</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non pariatur suscipit repudiandae facilis
+                  incidunt unde saepe</p>
+              </div>
             </div>
-            <div class="image" style="background-image: url(img/sitio2.JPG);"></div>
-          </div>
-          <div class="image-bg-fullwidth" style="background-image: url(img/sitio3.jpg);"></div>
+          </a>
         </div>
       </div>
+    </div>
+    <div id="platoss"></div>
+  </div> <!-- .section -->
 
-      <div id="menu-display" data-aos="fade" data-aos-delay="400">
-        <h2 class="m-5 pt-4 text-center">Conoce nuestros menús de grupo</h2>
-        <div id="buttons-container">
-          <div onclick="menuSwitcher(1)" class="buttons-menu active">1</div>
-          <div onclick="menuSwitcher(2)" class="buttons-menu">2</div>
-          <div onclick="menuSwitcher(3)" class="buttons-menu">3</div>
+
+  <div id="platos" data-aos="fade" data-aos-delay="400">
+    <div class="platos-sections">
+      <div id="buttons-platos">
+        <div id="p1" class="activep" onclick="platosSwitcher(1)">•</div>
+        <div id="p2" onclick="platosSwitcher(2)">•</div>
+        <div id="p3" onclick="platosSwitcher(3)">•</div>
+        <div id="p4" onclick="platosSwitcher(4)">•</div>
+      </div>
+      <div id="img-platos-container">
+        <img src="./img/batch_THE_2745.jpg" id="img-1" alt="" class="platos-image fadeI">
+        <img src="./img/batch_THE_2875.jpg" id="img-2" alt="" class="platos-image fadeI">
+        <img src="./img/batch_THE_2951.jpg" id="img-3" alt="" class="platos-image fadeI">
+        <img src="./img/batch_THE_2951.jpg" id="img-4" alt="" class="platos-image fadeI">
+      </div>
+    </div>
+    <div class="platos-sections">
+      <div class="titulo-platos">
+        <h1>Los productos de Polito</h1>
+        <h4>descripcion descripcion descripcion</h4>
+      </div>
+      <div class="description-platos-container" id="description-platos">
+        <div class="description-platos fadeUp" id="platos-1">
+          <h4>Pan con Tomate</h4>
+          <p class="parr-description">rebanada de pan con medio tomate maduro restregado y aliñado con aceite de oliva, sal y opcionalmente ajo.
+          </p>
         </div>
-        <div id="menus-container">
-          <div id="m1" class="menu-container fadeI"  >
-            <div class="menu-section">
-              <h4> ENTRANTS / <i>ENTRANTES</i></h4>
-              <h5>per compartir / <i>para compartir</i></h5>
-              <p>
-                Els edamame d'Ana amb sèsam i oli de tòfona<br><i>Los edamame de Ana con sésamo y aceite de trufa</i><br>
-                Patates Bután/<i>Patatas Bután</i><br>Coca de vidre del Mossèn<br>Clàssica amanida de formatge de cabra
-                <br><i>Clásica ensalada de queso de cabra</i><br>Fingers de pollastre amb vinagreta provençal<br><i>Fingers de pollo con vinagreta provenzal</i> 
-              </p>
-            </div>
-            <div class="menu-section">
-              <h4>SEGONS / <i>SEGUNDOS</i></h4>
-              <h5>a escollir / <i>a escoger</i></h5>
-              <p>Calamar a la barbacoa<br>o<br><i>Tagliata de lagarto ibérico a la plancha</i></p>
-              <h4>POSTRES VARIATS/<i>VARIADOS</i></h4>
-              <h4>BODEGA</h4>
-              <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
-            </div>
-            <div class="menu-section">
-              <h4> INCLOU / <i>INCLUYE</i></h4>
-              <p>Cafè i aigua / <i>Café y agua</i></p>
-              <p>Bodega i aigua: 1 amolla per 3 persones<br><i>Bodega y agua: 1 botella cada 3 personas</i></p>
-              <h4>PREU/<i>PRECIO</i>: €30 (10% IVA INCL.)</h4>
-            </div>
-          </div>
-          <div id="m2" class="menu-container fadeI"  >
-            <div class="menu-section">
-              <h4> ENTRANTS / <i>ENTRANTES</i></h4>
-              <h5>per compartir / <i>para compartir</i></h5>
-              <p>
-                Hummus amb pebre vermel i oli de Kalamata <br>
-               <i>Hummus con pimentón y aceite de Kalamata</i><br>
-                Braves de muntanya / <i>Bravas de Montaña</i><br> Provolone fos amb orenga i pebre negre <br>
-               <i>Provolone fundido con orégano y pimienta negra</i><br>
+        <div class="description-platos fadeUp" id="platos-2">
+          <h4>Cazuela de pescaditos fritos</h4>
+          <p class="parr-description">ebozando el pescado en harina de almorta o trigo, friéndolo en aceite de oliva y espolvoreándolo con sal
+            como único condimento</p>
+        </div>
+        <div class="description-platos fadeUp" id="platos-3">
+          <h4>Hamburguesa</h4>
+          <p class="parr-description"> hecho a base de carne molida o de origen vegetal, aglutinada en forma de filete cocinado a la parrilla o a
+            la plancha, aunque también puede freírse u hornearse.</p>
+        </div>
+        <div class="description-platos fadeUp" id="platos-4">
+          <h4>Titulo4</h4>
+          <p class="parr-description">3descripdescripdescripdescrip descrip descrip</p>
+        </div>
 
-                Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Amanida Russa com li agrada a Joan<br>
-                <i>Ensaladilla Rusa como le gusta a Joan</i>
-                
-              </p>
-            </div>
-            <div class="menu-section">
-              <h4>SEGONS / <i>SEGUNDOS</i></h4>
-              <h5>a escollir / <i>a escoger</i></h5>
-              <p>Arròs de Mar del Jose / <i>Arroz de Mar del Jose</i></p>
-              <p>Tàrtar de salmó amb torradetes /<i>Tartar de salmón con tostaditas</i></p>
-              <p>Carpaccio de Vedella amb vinagreta de llimona i Parma <br><i>Carpaccio de Ternera con vinagreta de limón y Parma</i></p>
-              <h4>POSTRES VARIATS / <i>VARIADOS</i></h4>
-              <h4>BODEGA</h4>
-              <p>La Camioneta (D.O Rueda)<br>
-              Cantamañanas Roble (D.O. Ribera del Duero)</p>
-            </div>
-            <div class="menu-section">
-              <h4> INCLOU / <i>INCLUYE</i></h4>
-              <p>Cafè i aigua / Café y agua</p>
-              <p>Bodega i aigua: 1 amolla per 3 persones <br> Bodega y agua: 1 botella cada 3 personas</p>
-              <h4>PREU/ <i>PRECIO</i>: €32 (10% IVA INCL.)</h4>
-            </div>
-          </div>
-          <div id="m3" class="menu-container fadeI">
-            <div class="menu-section">
-              <h4> ENTRANTS /<i>ENTRANTES</i></h4>
-              <h5>per compartir / <i>para compartir</i></h5>
-              <p>
-                Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Coca de vidre del Mossèn<br>Hummus amb pebre vermel i oli de Kalamata <br><i>Hummus con pimentón y aceite de Kalamata</i><br>Braves de muntanya / <i>Bravas de Montaña</i><br>Amanida Russa com li agrada a Joan<br>
-                <i>Ensaladilla Rusa como le gusta a Joan</i>
-              </p>
-            </div>
-            <div class="menu-section">
-              <h4>SEGONS / SEGUNDOS</h4>
-              <h5>per compartir / <i>para compartir</i></h5>
-              <p>Calamar a la barbacoa</p><br>
-              <p>Tagliata de lagarto ibèric amb virutes de Parma i parmentier amb pebre de Sichuan<br>Tagliata de lagarto ibérico con virutas de Parma y parmentier con pimienta de Sichuan</p>
-              <h4>POSTRES VARIATS/ VARIADOS </h4>
-              <h4>BODEGA</h4>
-              <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
-            </div>
-            <div class="menu-section">
-              <h4> INCLOU / <i>INCLUYE</i></h4>
-              <p>Cafè i aigua / <i>Café y agua</i></p>
-              <p>Bodega i aigua: 1 amolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
-              <h4>PREU/ <i>PRECIO</i>: €34 (10% IVA INCL.)</h4>
-            </div>
+      </div>
+      <div id="lugar"></div>
+    </div>
+
+  </div>
+
+  <div class="site-half-wrap d-block d-lg-flex">
+    <div class="block-half" data-aos="fade">
+      <div class="image-bg-fullwidth" style="background-image: url(img/sitio4.JPG);"></div>
+      <div class="half d-block d-lg-flex">
+        <div class="text">
+          <h2 class="mb-4">Polito</h2>
+          <p class="mb-4">Ubicado en un lugar privilegiado, Polito te invita a disfrutar de una experiencia gastronómica
+            única, combinando sabores y texturas, en un ambiente relajado frente a la playa de Castelldefels. Cuando cae
+            el sol, nuestra terraza se vuelve un espacio de preferencia para todo aquel que busca una propuesta
+            diferente.</p>
+          <p><a href="#" class="btn btn-primary btn-outline-primary">conocer...</a></p>
+        </div>
+        <div class="image" style="background-image: url(img/sitio1.JPG)"></div>
+      </div>
+    </div>
+    <div class="block-half" data-aos="fade">
+      <div class="half d-block d-lg-flex">
+        <div class="text">
+          <h2 class="mb-4">La Clandestina</h2>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eos quasi,
+            necessitatibus dicta. Temporibus odit sed quisquam commodi, in aut, repellendus porro saepe minus, enim
+            obcaecati fugiat optio eaque odio?</p>
+          <p><a href="#" class="btn btn-primary btn-outline-primary">conocer...</a></p>
+        </div>
+        <div class="image" style="background-image: url(img/sitio2.JPG);"></div>
+      </div>
+      <div class="image-bg-fullwidth" style="background-image: url(img/sitio3.jpg);"></div>
+    </div>
+  </div>
+
+  <div id="menu-display" data-aos="fade" data-aos-delay="400">
+    <h2 class="m-5 pt-4 text-center">Conoce nuestros menús de grupo</h2>
+    <div id="buttons-container">
+      <div onclick="menuSwitcher(1)" class="buttons-menu activep">1</div>
+      <div onclick="menuSwitcher(2)" class="buttons-menu">2</div>
+      <div onclick="menuSwitcher(3)" class="buttons-menu">3</div>
+    </div>
+    <div id="menus-container">
+      <div id="m1" class="menu-container fadeI">
+        <div class="menu-section">
+          <h4> ENTRANTS / <i>ENTRANTES</i></h4>
+          <h5>per compartir / <i>para compartir</i></h5>
+          <p>
+            Els edamame d'Ana amb sèsam i oli de tòfona<br><i>Los edamame de Ana con sésamo y aceite de trufa</i><br>
+            Patates Bután/<i>Patatas Bután</i><br>Coca de vidre del Mossèn<br>Clàssica amanida de formatge de cabra
+            <br><i>Clásica ensalada de queso de cabra</i><br>Fingers de pollastre amb vinagreta provençal<br><i>Fingers
+              de pollo con vinagreta provenzal</i>
+          </p>
+        </div>
+        <div class="menu-section">
+          <h4>SEGONS / <i>SEGUNDOS</i></h4>
+          <h5>a escollir / <i>a escoger</i></h5>
+          <p>Calamar a la barbacoa<br>o<br><i>Tagliata de lagarto ibérico a la plancha</i></p>
+          <h4>POSTRES VARIATS/<i>VARIADOS</i></h4>
+          <h4>BODEGA</h4>
+          <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
+        </div>
+        <div class="menu-section">
+          <h4> INCLOU / <i>INCLUYE</i></h4>
+          <p>Cafè i aigua / <i>Café y agua</i></p>
+          <p>Bodega i aigua: 1 amolla per 3 persones<br><i>Bodega y agua: 1 botella cada 3 personas</i></p>
+          <h4>PREU/<i>PRECIO</i>: €30 (10% IVA INCL.)</h4>
+        </div>
+      </div>
+      <div id="m2" class="menu-container fadeI">
+        <div class="menu-section">
+          <h4> ENTRANTS / <i>ENTRANTES</i></h4>
+          <h5>per compartir / <i>para compartir</i></h5>
+          <p>
+            Hummus amb pebre vermel i oli de Kalamata <br>
+            <i>Hummus con pimentón y aceite de Kalamata</i><br>
+            Braves de muntanya / <i>Bravas de Montaña</i><br> Provolone fos amb orenga i pebre negre <br>
+            <i>Provolone fundido con orégano y pimienta negra</i><br>
+
+            Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Amanida
+            Russa com li agrada a Joan<br>
+            <i>Ensaladilla Rusa como le gusta a Joan</i>
+
+          </p>
+        </div>
+        <div class="menu-section">
+          <h4>SEGONS / <i>SEGUNDOS</i></h4>
+          <h5>a escollir / <i>a escoger</i></h5>
+          <p>Arròs de Mar del Jose / <i>Arroz de Mar del Jose</i></p>
+          <p>Tàrtar de salmó amb torradetes /<i>Tartar de salmón con tostaditas</i></p>
+          <p>Carpaccio de Vedella amb vinagreta de llimona i Parma <br><i>Carpaccio de Ternera con vinagreta de limón y
+              Parma</i></p>
+          <h4>POSTRES VARIATS / <i>VARIADOS</i></h4>
+          <h4>BODEGA</h4>
+          <p>La Camioneta (D.O Rueda)<br>
+            Cantamañanas Roble (D.O. Ribera del Duero)</p>
+        </div>
+        <div class="menu-section">
+          <h4> INCLOU / <i>INCLUYE</i></h4>
+          <p>Cafè i aigua / Café y agua</p>
+          <p>Bodega i aigua: 1 amolla per 3 persones <br> Bodega y agua: 1 botella cada 3 personas</p>
+          <h4>PREU/ <i>PRECIO</i>: €32 (10% IVA INCL.)</h4>
+        </div>
+      </div>
+      <div id="m3" class="menu-container fadeI">
+        <div class="menu-section">
+          <h4> ENTRANTS /<i>ENTRANTES</i></h4>
+          <h5>per compartir / <i>para compartir</i></h5>
+          <p>
+            Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Coca de
+            vidre del Mossèn<br>Hummus amb pebre vermel i oli de Kalamata <br><i>Hummus con pimentón y aceite de
+              Kalamata</i><br>Braves de muntanya / <i>Bravas de Montaña</i><br>Amanida Russa com li agrada a Joan<br>
+            <i>Ensaladilla Rusa como le gusta a Joan</i>
+          </p>
+        </div>
+        <div class="menu-section">
+          <h4>SEGONS / SEGUNDOS</h4>
+          <h5>per compartir / <i>para compartir</i></h5>
+          <p>Calamar a la barbacoa</p><br>
+          <p>Tagliata de lagarto ibèric amb virutes de Parma i parmentier amb pebre de Sichuan<br>Tagliata de lagarto
+            ibérico con virutas de Parma y parmentier con pimienta de Sichuan</p>
+          <h4>POSTRES VARIATS/ VARIADOS </h4>
+          <h4>BODEGA</h4>
+          <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
+        </div>
+        <div class="menu-section">
+          <h4> INCLOU / <i>INCLUYE</i></h4>
+          <p>Cafè i aigua / <i>Café y agua</i></p>
+          <p>Bodega i aigua: 1 amolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
+          <h4>PREU/ <i>PRECIO</i>: €34 (10% IVA INCL.)</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="loquenotepuedesperder">
+    <div class="container">
+      <div class="row justify-content-center mb-5" data-aos="fade-up">
+        <div class="col-md-8  text-center">
+          <h2 class="mb-3">Lo que no te puedes perder</h2>
+          <p class="lead">¿Sabes ese plato específico que siempre te hace volver a un sitio? <br> Bueno... te presentamos los
+            nuestros</p>
+        </div>
+      </div>
+      <div class="row large-gutters">
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <img src="img/arrozdemar.jpg" id="perderImg" alt="Image placeholder" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="accordion" id="accordion">
+
+            <div class="accordion-item">
+              <h3 class="mb-0" onclick="changePerder(2)">
+                <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false"
+                  aria-controls="collapseTwo">Gyozas de langostinos <span class="icon"></span></a>
+              </h3>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="p-3">
+                  <p>La Gyoza es uno de los platos mas tradicionales de la cocina oriental, son unos dumplings de fina y
+                    elástica masa de arroz con infinidad de rellenos.
+                    Nuestras Gyozas de langostino con soja, ponzu y sésamo son una experiencia para todos los sentidos
+                    que no puedes dejar pasar.</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+            <div class="accordion-item">
+              <h3 class="mb-0" onclick="changePerder(1)">
+                <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true"
+                  aria-controls="collapseOne">Arroz de mar del José<span class="icon"></span></a>
+              </h3>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="p-3">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis
+                    aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero
+                    aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga
+                    minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa
+                    tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi
+                    aliquid eaque vel facilis culpa voluptate.</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0" onclick="changePerder(3)">
+                <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button"
+                  aria-expanded="false" aria-controls="collapseThree">Blue Gin <span class="icon"></span></a>
+              </h3>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="p-3">
+                  <p>Más refrescante que el mar, el Blue Gin de Polito con frutos rojos. ¿Aún no has probado?</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
           </div>
         </div>
       </div>
+    </div>
+  </div> <!-- .section -->
 
-      <div class="section" id="loquenotepuedesperder">
-        <div class="container">
-          <div class="row justify-content-center mb-5" data-aos="fade-up">
-            <div class="col-md-8  text-center">
-              <h2 class="mb-3">Lo que no te puedes perder</h2>
-              <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fuga, alias distinctio voluptatum magni voluptatibus.</p>
+  <footer id="contacto">
+    <div class="site-footer">
+      <div class="container">
+        <div class="row small-gutters mb-5">
+          <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
+            <div class="footer-widget">
+              <h3>Polito </h3>
+              <p>Chiringuito Boutique.</p>
+              <p>Castelldefels</p>
             </div>
           </div>
-          <div class="row large-gutters">
-            <div class="col-md-6"  data-aos="fade-up" data-aos-delay="200">
-              <img src="img/img_2.jpg" alt="Image placeholder" class="img-fluid rounded">
-            </div>
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="accordion" id="accordion">
-                <div class="accordion-item">
-                  <h3 class="mb-0">
-                    <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">Quality Cuisine <span class="icon"></span></a>
-                  </h3>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="p-3">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
-                    </div>
-                  </div>
-                </div> <!-- .accordion-item -->
-                
-                <div class="accordion-item">
-                  <h3 class="mb-0">
-                    <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Fresh Food <span class="icon"></span></a>
-                  </h3>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="p-3">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
-                    </div>
-                  </div>
-                </div> <!-- .accordion-item -->
-
-                <div class="accordion-item">
-                  <h3 class="mb-0">
-                    <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Friendly Staff  <span class="icon"></span></a>
-                  </h3>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="p-3">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
-                    </div>
-                  </div>
-                </div> <!-- .accordion-item -->
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- .section -->
-
-      <footer>
-        <div class="site-footer">
-          <div class="container">
-            <div class="row small-gutters mb-5">
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
-                <div class="footer-widget">
-                  <h3>Polito </h3>
-                  <p>Chiringuito Boutique.</p>
-                  <p>Castelldefels</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
-                <div class="footer-widget">
-                  <h3>Almuerzos</h3>
-                  <p>12:00pm - 3:30pm</p>
-                  <h3>Cenas</h3>
-                  <p>6:00pm - 9:00pm</p>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-lg-3 mb-5 ml-auto" data-aos="fade" data-aos-delay="400">
-                <div class="footer-widget footer-contact-widget">
-
-                
-
-                  <h3>Contacto</h3>
-                  <p class="contact-email">info@yourdomain.com</p>
-                  <p class="contact-phone">1-444-123-9829</p>
-
-
-                </div>
-              </div>
+          <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+            <div class="footer-widget">
+              <h3>Almuerzos</h3>
+              <p>12:00pm - 3:30pm</p>
+              <h3>Cenas</h3>
+              <p>6:00pm - 9:00pm</p>
             </div>
           </div>
 
-        </div>
-      </footer>
+          <div class="col-md-6 col-lg-3 mb-5 ml-auto" data-aos="fade" data-aos-delay="400">
+            <div class="footer-widget footer-contact-widget">
 
-      <div class="site-footer-copyright">
-        <div class="container">
-          <div class="row">
 
-            <p class="footer-text col-md-12">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-              Copyright &copy;<script>
-                document.write(new Date().getFullYear());
-              </script> All rights reserved | <a href="https://collabo.studio"> <strong>Collabo Studio</strong> </a></a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+
+              <h3>Contacto</h3>
+              <p class="contact-email">mpolitoandco@gmail.com</p>
+              <p class="contact-email">Carrer Ribera de Sant Pere 17</p>
+              <p class="contact-email">Móvil : 638 265 261</p>
+              <p class="contact-email">Teléfono: 932 694 812</p>
+
+
+            </div>
           </div>
         </div>
       </div>
 
     </div>
+  </footer>
 
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-          stroke="#f4b214" /></svg></div>
+  <div class="site-footer-copyright">
+    <div class="container">
+      <div class="row">
 
+        <p class="footer-text col-md-12">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Copyright &copy;<script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved | <a href="https://collabo.studio"> <strong>Collabo Studio</strong> </a></a>
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <script>
-      const menuSwitcher = (menu, e) => {
-        let menu1 = document.getElementById("m1");
-        let menu2 = document.getElementById("m2");
-        let menu3 = document.getElementById("m3");
-        let menus = [menu1, menu2, menu3],n = menu - 1, ch = menus[n],theRest = menus.filter(x =>x !== ch);
-        ch.style.display = "flex";
-        theRest.forEach(x => {
-          x.style.display = "none";
-        });
-        // event.target.classList += " active"
-        let buttons = document.getElementById('buttons-container').children;
+  </div>
 
-        let active = buttons[n]
-        active.classList += " active"
-        theRestButtons = [...buttons].filter(x =>x !== active);
-        theRestButtons.forEach(x => {
-          x.classList = "buttons-menu";
-        });
-      };
-    
-    
-    
-      const platosSwitcher = (platos, e) => {
-     
-        let platoss = document.getElementById('description-platos').children;
-        let ch= document.getElementById(`platos-${platos}`);
-        let n = platos - 1 ,theRest = [...platoss].filter(x =>x !== ch);
-        ch.style.display = "flex";
-        theRest.forEach(x => {
-          x.style.display = "none";
-        });
-       
-        let imgs = document.getElementById('img-platos-container').children;
-        let chimg = document.getElementById(`img-${platos}`);
-        let nimg = platos - 1, theRestimg = [...imgs].filter(x =>x !== chimg);
-        chimg.style.display = "flex";
-        theRestimg.forEach(x => {
-          x.style.display = "none";
-        });
-       
-        let buttons = document.getElementById('buttons-platos').children;
-
-        let active = buttons[n]
-        active.classList += " active"
-        theRestButtons = [...buttons].filter(x =>x !== active);
-        theRestButtons.forEach(x => {
-          x.classList = "buttons-platos";
-        });
-      };
-    </script>
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-
-    <script src="js/aos.js"></script>
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#f4b214" /></svg></div>
 
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
-    </script>
+  <script>
+    let navlinks = document.getElementById('navlinks').children;
+    [...navlinks].forEach(x => {
+      x.addEventListener("click", () => {
+        console.log("asd")
+      })
+    })
 
-    <script src="js/main.js"></script>
+    const changePerder = (number) => {
+      let perderImg = document.getElementById('perderImg')
+      switch (number) {
+        case 1:
+          perderImg.src = "img/arrozdemar.jpg"
+          break;
+        case 2:
+          perderImg.src = "img/gyozas.jpg"
+          break;
+        case 3:
+          perderImg.src = "img/perder3.jpg"
+          break;
+
+        default:
+          perderImg.src = "img/arrozdemar.jpg"
+          break;
+      }
+    }
+
+    const menuSwitcher = (menu, e) => {
+      let menu1 = document.getElementById("m1");
+      let menu2 = document.getElementById("m2");
+      let menu3 = document.getElementById("m3");
+      let menus = [menu1, menu2, menu3],
+        n = menu - 1,
+        ch = menus[n],
+        theRest = menus.filter(x => x !== ch);
+      ch.style.display = "flex";
+      theRest.forEach(x => {
+        x.style.display = "none";
+      });
+      // event.target.classList += " active"
+      let buttons = document.getElementById('buttons-container').children;
+
+      let active = buttons[n]
+      active.classList += " activep"
+      theRestButtons = [...buttons].filter(x => x !== active);
+      theRestButtons.forEach(x => {
+        x.classList = "buttons-menu";
+      });
+    };
+
+
+
+    const platosSwitcher = (platos, e) => {
+
+      let platoss = document.getElementById('description-platos').children;
+      let ch = document.getElementById(`platos-${platos}`);
+      let n = platos - 1,
+        theRest = [...platoss].filter(x => x !== ch);
+      ch.style.display = "flex";
+      theRest.forEach(x => {
+        x.style.display = "none";
+      });
+
+      let imgs = document.getElementById('img-platos-container').children;
+      let chimg = document.getElementById(`img-${platos}`);
+      let nimg = platos - 1,
+        theRestimg = [...imgs].filter(x => x !== chimg);
+      chimg.style.display = "flex";
+      theRestimg.forEach(x => {
+        x.style.display = "none";
+      });
+
+      let buttons = document.getElementById('buttons-platos').children;
+
+      let active = buttons[n]
+      active.classList += " activep"
+      theRestButtons = [...buttons].filter(x => x !== active);
+      theRestButtons.forEach(x => {
+        x.classList = "buttons-platos";
+      });
+    };
+  </script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+
+  <script src="js/aos.js"></script>
+
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+  </script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

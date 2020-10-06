@@ -127,6 +127,7 @@ textarea.form-control {
 /* Site Menu*/
 .site-menu {
     display: none;
+    /* display: block; */
     background: black;
     left: 0;
     right: 0;
@@ -1561,7 +1562,7 @@ div.buttons-menu {
     cursor: pointer;
 }
 
-.active {
+.activep {
     border-bottom: 2px solid #bd8302;
     cursor: pointer;
 }
@@ -1627,6 +1628,9 @@ div#platos {
 
     #buttons-platos {
         margin-top: 90px !important;
+    }
+    .parr-description{
+        display: none;
     }
 }
 
@@ -1727,4 +1731,13 @@ div.titulo-platos {
 
    html {
   scroll-behavior: smooth;
+}
+
+.sectionsIcon{
+    max-width:52px;
+}
+
+.strongIcon{
+        filter: drop-shadow(.01px .01px .4px #000);
+
 }

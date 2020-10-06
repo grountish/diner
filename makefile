@@ -4,5 +4,4 @@ git:
 	git push -u origin master
 
 deploy:
-	npm run build
 	firebase deploy

@@ -63,7 +63,7 @@ AOS.init({
   $('.js-site-nav-toggle').on('click', function(e) {
 
     var $this = $(this);
-    e.preventDefault();
+   
 
  
 
@@ -86,7 +86,7 @@ AOS.init({
       $('body').removeClass('menu-open');
     } else {
       $('.site-menu').fadeIn(400);
-      $this.addClass('active');
+      // $this.addClass('active');
       $('body').addClass('menu-open');
 
       setTimeout(function() {
