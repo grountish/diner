@@ -70,8 +70,8 @@ textarea.form-control {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-    border-color: #fec97d;
-    background: #fec97d;
+    border-color: #efc993;
+    background:#efc993;
 }
 
 .btn.btn-sm {
@@ -80,7 +80,7 @@ textarea.form-control {
 
 .btn.btn-outline-primary {
     border-width: 2px;
-    color: #fdb44b;
+    color:#efc993;
 }
 
 .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary:active {
@@ -315,7 +315,7 @@ textarea.form-control {
 
 .section-heading .small-sub-heading {
     font-size: 14px;
-    color: #fdb44b;
+    color: #efc993;
 }
 
 @media (min-width: 992px) {
@@ -359,7 +359,9 @@ textarea.form-control {
     padding: 20px;
     background: #fff;
 }
-
+.media-body p{
+    color: rgb(58 54 54);
+}
 .site-tab-nav {
     display: block;
     text-align: center;
@@ -387,7 +389,7 @@ textarea.form-control {
 .site-tab-nav li a.active {
     color: black;
     background: none;
-    border-bottom: 2px solid #fdb44b;
+    border-bottom: 2px solid #efc993;
 }
 
 .site-tab-nav, .nav-pills {
@@ -398,6 +400,7 @@ textarea.form-control {
 
 .site-footer {
     padding: 7em 0;
+    border-top: 1px solid black;
 }
 
 .site-footer .footer-widget h3 {
@@ -425,7 +428,7 @@ textarea.form-control {
 }
 
 .site-footer-copyright p {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .site-footer-copyright p:last-child {
@@ -463,7 +466,7 @@ textarea.form-control {
 }
 
 .menu-food-item .price strong {
-    color: #fdb44b;
+    color: #efc993;
     font-size: 20px;
 }
 
@@ -491,7 +494,7 @@ textarea.form-control {
 }
 
 .footer-contact-widget .contact-email {
-    color: #fdb44b;
+    color: #efc993;
 }
 
 .footer-contact-widget .contact-phone {
@@ -535,7 +538,7 @@ textarea.form-control {
 
 .custom-icon {
     font-size: 70px;
-    color: #fdb44b;
+    color: #efc993;
 }
 
 .form-subscribe .form-group {
@@ -569,7 +572,7 @@ textarea.form-control {
     display: inline-block;
     position: relative;
     margin-bottom: 30px;
-    background: #fdb44b;
+    background: #efc993;
 }
 
 .feature-icon .icon>span {
@@ -661,7 +664,7 @@ textarea.form-control {
 }
 
 .owl-carousel.centernonloop .owl-dots .owl-dot.active {
-    background: #fdb44b;
+    background:#efc993;
 }
 
 .owl-carousel.centernonloop .owl-dots .owl-dot:active, .owl-carousel.centernonloop .owl-dots .owl-dot:focus {
@@ -798,11 +801,11 @@ textarea.form-control {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    background: #fdb44b;
+    background: #efc993;
 }
 
 .owl-carousel.home-slider-loop-false .owl-dots .owl-dot.active {
-    border: 2px solid #fdb44b;
+    border: 2px solid #efc993;
 }
 
 .owl-carousel.home-slider-loop-false .owl-dots .owl-dot.active span {
@@ -991,7 +994,7 @@ textarea.form-control {
     margin: 0;
     border-radius: 50% !important;
     font-size: 16px;
-    background: #fdb44b;
+    background: #efc993;
     color: #fff;
 }
 
@@ -1139,7 +1142,7 @@ textarea.form-control {
 
 .menus .item .text .price {
     font-size: 30px;
-    color: #fdb44b;
+    color: #efc993;
     opacity: 1;
 }
 
@@ -1200,7 +1203,7 @@ textarea.form-control {
 }
 
 .accordion .btn-block[aria-expanded="true"] {
-    color: #fdb44b;
+    color: #efc993;
 }
 
 .accordion .btn-block[aria-expanded="true"] .icon:before {
@@ -1563,7 +1566,7 @@ div.buttons-menu {
 }
 
 .activep {
-    border-bottom: 2px solid #bd8302;
+    border-bottom: 2px solid #efc993;
     cursor: pointer;
 }
 
@@ -1589,7 +1592,7 @@ div.menu-container h4 {
 
 div.menu-container h5 {
     font-size: 19px;
-    color: #a27a00;
+    color: #efc993;
 }
 
 
@@ -1640,7 +1643,7 @@ div#platos {
 
 div.titulo-platos {
     margin: 5%;
-    border: 1px solid #fdb44a;
+    border: 1px solid #efc993;
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -1735,9 +1738,14 @@ div.titulo-platos {
 
 .sectionsIcon{
     max-width:52px;
+    
 }
 
 .strongIcon{
         filter: drop-shadow(.01px .01px .4px #000);
 
+}
+
+.link-collabo{
+    color:greenyellow;
 }
