@@ -506,8 +506,8 @@ textarea.form-control {
     margin-bottom: 0;
 }
 
-.footer-contact-widget .contact-email {
-    color: #efc993;
+.contacto {
+    color: #efc993 !important;
 }
 
 .footer-contact-widget .contact-phone {
