@@ -19,10 +19,10 @@ a {
     transition: .3s all ease;
     text-decoration: none;
 }
-a{
+/* a{
     text-decoration: none !important;
     color: inherit !important;
-}
+} */
 p {
     margin: 0 !important;
 }
