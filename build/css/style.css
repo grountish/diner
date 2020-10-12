@@ -19,7 +19,10 @@ a {
     transition: .3s all ease;
     text-decoration: none;
 }
-
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
 p {
     margin: 0 !important;
 }
@@ -1796,8 +1799,4 @@ html {
     color: #9a8568;
     padding: 4%;
     font-weight:400;
-}
-a{
-    text-decoration: none !important;
-    color: inherit !important;
 }
