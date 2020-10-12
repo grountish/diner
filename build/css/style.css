@@ -506,9 +506,7 @@ textarea.form-control {
     margin-bottom: 0;
 }
 
-.contacto {
-    color: #efc993 !important;
-}
+
 
 .footer-contact-widget .contact-phone {
     font-size: 30px;
@@ -1698,10 +1696,10 @@ div.titulo-platos {
     width: 35%;
     margin-top: 3vw;
 }
-
+/* 
 .description-platos h4 {
-    /* margin: 10px auto 60px auto; */
-}
+    /* margin: 10px auto 60px auto; }*/
+ 
 
 #description-platos-container {
     justify-content: center;
@@ -1796,7 +1794,11 @@ html {
 .boton{
     border: 2px solid #efc993;
     background-color:white !important;
-    color: #9a8568;
+    color: #b3874a;
     padding: 4%;
     font-weight:400;
+}
+.contacto {
+    text-decoration: none !important;
+    color: #efc993 !important;
 }
