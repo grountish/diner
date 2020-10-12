@@ -1516,7 +1516,9 @@ textarea.form-control {
 /* mi css */
 @media only screen and (max-width: 500px) {
     .site-logo {
-        width: 150px;
+        width: 130px;
+        transform:translate(-19%, -1%);
+        
     }
 
     #menu-container {
