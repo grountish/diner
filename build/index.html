@@ -12,20 +12,13 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/aos.css">
-
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-
   <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
 </head>
 
 <body>
@@ -52,6 +45,7 @@
           <ul class="list-unstyled social">
             <li><a href="tel:+932694812"><span class="fa fa-phone"></span></a></li>
             <li><a href="https://www.instagram.com/politocastelldefels"><span class="fa fa-instagram"></span></a></li>
+            <li><a href="https://menupolito.web.app"><img src="./img/menu.svg" class="menusvg" alt=""></a></li>
           </ul>
         </div>
         <div class="col-2 col-md-6 text-center">
@@ -88,11 +82,11 @@
               <div class="col-md-6 col-lg-3" data-aos="fade-up">
                 <div class="media feature-icon d-block text-center">
                   <div class="icon">
-                    <span ><img class="sectionsIcon strongIcon" src="./img/losprodIcon.png" alt=""></span>
+                    <span><img class="sectionsIcon strongIcon" src="./img/losprodIcon.png" alt=""></span>
                   </div>
                   <div class="media-body">
                     <h3>Los platos de temporada</h3>
-                   
+
                   </div>
                 </div>
             </a>
@@ -101,11 +95,11 @@
             <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
               <div class="media feature-icon d-block text-center">
                 <div class="icon">
-                  <span ><img class="sectionsIcon strongIcon" src="./img/lugaricon.png" alt=""></span>
+                  <span><img class="sectionsIcon strongIcon" src="./img/lugaricon.png" alt=""></span>
                 </div>
                 <div class="media-body">
                   <h3>El entorno</h3>
-                  
+
                 </div>
               </div>
           </a>
@@ -114,11 +108,11 @@
           <a href="#menu-display">
             <div class="media feature-icon d-block text-center">
               <div class="icon">
-                <span ><img class="sectionsIcon" src="./img/menuIcon.png" alt=""></span>
+                <span><img class="sectionsIcon" src="./img/menuIcon.png" alt=""></span>
               </div>
               <div class="media-body">
                 <h3>Nuestros Menús para grupos</h3>
-               
+
               </div>
             </div>
           </a>
@@ -127,11 +121,11 @@
           <a href="#loquenotepuedesperder">
             <div class="media feature-icon d-block text-center">
               <div class="icon">
-                <span ><img class="sectionsIcon" src="./img/heart.png" alt=""></span>
+                <span><img class="sectionsIcon" src="./img/heart.png" alt=""></span>
               </div>
               <div class="media-body">
                 <h3>Lo que no te puedes perder</h3>
-               
+
               </div>
             </div>
           </a>
@@ -141,53 +135,56 @@
     <div id="platoss"></div>
   </div> <!-- .section -->
 
-<div class="platos-container">
-  <div class="titulo-platos">
-    <h1>Los platos de temporada</h1>
-    <!-- <h4>descripcion descripcion descripcion</h4> -->
-  </div>
-  <div id="platos" data-aos="fade" data-aos-delay="400">
-   
-    <div class="platos-sections">
-      <div id="buttons-platos">
-        <div id="p1" class="activep" onclick="platosSwitcher(1)">•</div>
-        <div id="p2" onclick="platosSwitcher(2)">•</div>
-        <div id="p3" onclick="platosSwitcher(3)">•</div>
-        <div id="p4" onclick="platosSwitcher(4)">•</div>
-      </div>
-      <div id="img-platos-container">
-        <img src="./img/batch_THE_2745.jpg" id="img-1" alt="" class="platos-image fadeI">
-        <img src="./img/batch_THE_2875.jpg" id="img-2" alt="" class="platos-image fadeI">
-        <img src="./img/batch_THE_2951.jpg" id="img-3" alt="" class="platos-image fadeI">
-        <img src="./img/tortilla.png" id="img-4" alt="" class="platos-image fadeI">
-      </div>
+  <div class="platos-container">
+    <div class="titulo-platos">
+      <h1>Los platos de temporada</h1>
+      <!-- <h4>descripcion descripcion descripcion</h4> -->
     </div>
-    <div class="platos-sections section2">
-     
-      <div class="description-platos-container" id="description-platos">
-        <div class="description-platos fadeUp" id="platos-1">
-          <h4>Pan con Tomate</h4>
-          <p class="parr-description">Coca de vidre del mossèn untada con tomate de rama y aceite virgen de oliva arbequina.
-          </p>
-        </div>
-        <div class="description-platos fadeUp" id="platos-2">
-          <h4>Cazuela de pescaditos fritos</h4>
-          <p class="parr-description">rebozada con harina de garbanzos, harina de trigo y un toque de fritura. El toque final con un twist de lima rallada.</p>
-        </div>
-        <div class="description-platos fadeUp" id="platos-3">
-          <h4>Burger de ternera</h4>
-          <p class="parr-description">Nuestra hamburguesa gruesa de ternera, con sus apetecibles complementos. Te sorprenderá al llegar a la mesa.</p>
-        </div>
-        <div class="description-platos fadeUp" id="platos-4">
-          <h4>Tortilla de patata trufada</h4>
-          <p class="parr-description">Es indescriptible. Solo puedes que probarla</p>
-        </div>
+    <div id="platos" data-aos="fade" data-aos-delay="400">
 
+      <div class="platos-sections">
+        <div id="buttons-platos">
+          <div id="p1" class="activep" onclick="platosSwitcher(1)">•</div>
+          <div id="p2" onclick="platosSwitcher(2)">•</div>
+          <div id="p3" onclick="platosSwitcher(3)">•</div>
+          <div id="p4" onclick="platosSwitcher(4)">•</div>
+        </div>
+        <div id="img-platos-container">
+          <img src="./img/batch_THE_2745.jpg" id="img-1" alt="" class="platos-image fadeI">
+          <img src="./img/batch_THE_2875.jpg" id="img-2" alt="" class="platos-image fadeI">
+          <img src="./img/batch_THE_2951.jpg" id="img-3" alt="" class="platos-image fadeI">
+          <img src="./img/tortilla.jpg" id="img-4" alt="" class="platos-image fadeI">
+        </div>
       </div>
-      <div id="lugar"></div>
-    </div>
+      <div class="platos-sections section2">
 
-  </div>
+        <div class="description-platos-container" id="description-platos">
+          <div class="description-platos fadeUp" id="platos-1">
+            <h4>Pan con Tomate</h4>
+            <p class="parr-description">Coca de vidre del Mossèn untada con tomate de rama y aceite virgen de oliva
+              arbequina.
+            </p>
+          </div>
+          <div class="description-platos fadeUp" id="platos-2">
+            <h4>Cazuela de pescaditos fritos</h4>
+            <p class="parr-description">rebozada con harina de garbanzos, harina de trigo y una suave fritura. El toque
+              final con un twist de lima rallada.</p>
+          </div>
+          <div class="description-platos fadeUp" id="platos-3">
+            <h4>Burger de ternera</h4>
+            <p class="parr-description">Nuestra hamburguesa gruesa de ternera, con sus apetecibles complementos. Te
+              sorprenderá al llegar a la mesa.</p>
+          </div>
+          <div class="description-platos fadeUp" id="platos-4">
+            <h4>Tortilla de patata trufada</h4>
+            <p class="parr-description">Es indescriptible. Solo tienes que probarla</p>
+          </div>
+
+        </div>
+        <div id="lugar"></div>
+      </div>
+
+    </div>
   </div>
   <div class="lugar-slice"></div>
   <div class="site-half-wrap d-block d-lg-flex lugar-container">
@@ -195,11 +192,12 @@
       <div class="image-bg-fullwidth" style="background-image: url(img/sitio4.JPG);"></div>
       <div class="half d-block d-lg-flex">
         <div class="text">
-          <h2 class="mb-4">Polito</h2>
-          <p class="mb-4">Ubicado en un lugar único, Polito te invita a disfrutar de una experiencia gastronómica
-            fresca, combinando sabores y texturas, en un ambiente relajado frente a la playa de Castelldefels. Al atardecer, nuestra terraza se vuelve un espacio de preferencia para todo aquel que busca una propuesta
+          <h2 class="mb-2">Polito</h2>
+          <p class="mb-2">Ubicado en un lugar único, Polito te invita a disfrutar de una experiencia gastronómica
+            fresca, combinando sabores y texturas, en un ambiente relajado frente a la playa de Castelldefels. Al
+            atardecer, nuestra terraza se vuelve un espacio de preferencia para todo aquel que busca una propuesta
             diferente.</p>
-          
+          <div class="boton dos" onclick="openModal();currentSlide(1)">Descubrir</div>
         </div>
         <div class="image" style="background-image: url(img/sitio1.JPG)"></div>
       </div>
@@ -208,14 +206,76 @@
       <div class="half d-block d-lg-flex">
         <div class="text">
           <h2 class="mb-4">La Clandestina</h2>
-          <p class="mb-4">La Clandestina es un espacio privilegiado en Polito donde disfrutar de una vista fantástica de la playa de Castelldefels. Tanto así, que se ha vuelto la preferida de los eventos privados. Consulta por disponibilidad.</p>
-          <a href="#contacto" class="boton">Contacto</a>
+          <p class="mb-4">La Clandestina es un espacio privilegiado en Polito donde disfrutar de una vista fantástica de
+            la playa de Castelldefels. Tanto es así, que se ha vuelto la preferida de los eventos privados. Consulta por
+            su disponibilidad.</p>
+          <a href="tel:+932694812" class="boton">Contacto</a>
         </div>
         <div class="image" style="background-image: url(img/sitio2.JPG);"></div>
       </div>
       <div class="image-bg-fullwidth " style="background-image: url(img/clandestin1.jpg);"></div>
     </div>
   </div>
+
+
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal fadeI" data-aos="fade">
+    <span class="close cursor" onclick="closeModal()">X </span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider1.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider2.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider3.jpg">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider4.jpg">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider5.jpg">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider6.jpg">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider7.jpg">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext"></div>
+        <img class="imgReplace" src="./img/slider8.jpg">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+
+    </div>
+  </div>
+
+
+
   <div id="menu-display" data-aos="fade" data-aos-delay="400">
     <h2 class="m-5 pt-4 text-center">Conoce nuestros menús de grupo</h2>
     <div id="buttons-container">
@@ -229,7 +289,7 @@
           <h4> ENTRANTS / <i>ENTRANTES</i></h4>
           <h5>per compartir / <i>para compartir</i></h5>
           <p>
-            Els edamame d'Ana amb sèsam i oli de tòfona<br><i>Los edamame de Ana con sésamo y aceite de trufa</i><br>
+            Els Edamame d'Ana amb sèsam i oli de tòfona<br><i>Los edamame de Ana con sésamo y aceite de trufa</i><br>
             Patates Bután/<i>Patatas Bután</i><br>Coca de vidre del Mossèn<br>Clàssica amanida de formatge de cabra
             <br><i>Clásica ensalada de queso de cabra</i><br>Fingers de pollastre amb vinagreta provençal<br><i>Fingers
               de pollo con vinagreta provenzal</i>
@@ -238,16 +298,17 @@
         <div class="menu-section">
           <h4>SEGONS / <i>SEGUNDOS</i></h4>
           <h5>a escollir / <i>a escoger</i></h5>
-          <p>Calamar a la barbacoa<br>o<br><i>Tagliata de lagarto ibérico a la plancha</i></p>
+          <p>Calamar a la barbacoa<br>o<br><i>Tagliata de lagarto ibérico a la plancha con virutas de Parma <br>
+              Tagliata de lagarto ibèric a la planxa amb virutes de Parma</i></p>
           <h4>POSTRES VARIATS/<i>VARIADOS</i></h4>
-          <h4>BODEGA</h4>
+          <h4>CELLER / BODEGA</h4>
           <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
         </div>
         <div class="menu-section">
           <h4> INCLOU / <i>INCLUYE</i></h4>
-          <p>Cafè i aigua / <i>Café y agua</i></p>
-          <p>Bodega i aigua: 1 amolla per 3 persones<br><i>Bodega y agua: 1 botella cada 3 personas</i></p>
-          <h4>PREU/<i>PRECIO</i>: €30 (10% IVA INCL.)</h4>
+          <p> Cafè i aigua / <i>Café y agua</i></p>
+          <p>Celler i aigua: 1 ampolla per 3 persones<br><i>Bodega y agua: 1 botella cada 3 personas</i></p>
+          <h4>PREU/<i>PRECIO</i>: 30€ (10% IVA INCL.)</h4>
         </div>
       </div>
       <div id="m2" class="menu-container fadeI">
@@ -274,15 +335,15 @@
           <p>Carpaccio de Vedella amb vinagreta de llimona i Parma <br><i>Carpaccio de Ternera con vinagreta de limón y
               Parma</i></p>
           <h4>POSTRES VARIATS / <i>VARIADOS</i></h4>
-          <h4>BODEGA</h4>
+          <h4>CELLER / BODEGA</h4>
           <p>La Camioneta (D.O Rueda)<br>
             Cantamañanas Roble (D.O. Ribera del Duero)</p>
         </div>
         <div class="menu-section">
           <h4> INCLOU / <i>INCLUYE</i></h4>
           <p>Cafè i aigua / Café y agua</p>
-          <p>Bodega i aigua: 1 amolla per 3 persones <br> Bodega y agua: 1 botella cada 3 personas</p>
-          <h4>PREU/ <i>PRECIO</i>: €32 (10% IVA INCL.)</h4>
+          <p>Celler i aigua: 1 ampolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
+          <h4>PREU/ <i>PRECIO</i>: 32€ (10% IVA INCL.)</h4>
         </div>
       </div>
       <div id="m3" class="menu-container fadeI">
@@ -300,17 +361,17 @@
           <h4>SEGONS / SEGUNDOS</h4>
           <h5>per compartir / <i>para compartir</i></h5>
           <p>Calamar a la barbacoa</p><br>
-          <p>Tagliata de lagarto ibèric amb virutes de Parma i parmentier amb pebre de Sichuan<br>Tagliata de lagarto
-            ibérico con virutas de Parma y parmentier con pimienta de Sichuan</p>
+          <p>Tagliata de lagarto ibèric amb virutes de Parma <br>Tagliata de lagarto
+            ibérico con virutas de Parma </p>
           <h4>POSTRES VARIATS/ VARIADOS </h4>
-          <h4>BODEGA</h4>
+          <h4>CELLER / BODEGA</h4>
           <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
         </div>
         <div class="menu-section">
           <h4> INCLOU / <i>INCLUYE</i></h4>
           <p>Cafè i aigua / <i>Café y agua</i></p>
-          <p>Bodega i aigua: 1 amolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
-          <h4>PREU/ <i>PRECIO</i>: €34 (10% IVA INCL.)</h4>
+          <p>Celler i aigua: 1 ampolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
+          <h4>PREU/ <i>PRECIO</i>: 34€ (10% IVA INCL.)</h4>
         </div>
       </div>
     </div>
@@ -353,7 +414,8 @@
               </h3>
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="p-3">
-                  <p>Nuestro arroz es la reminiscencia del sabor y la forma de cocinar los arroces de nuestros Xiringuitos Originales. Es uno de los platos mas elegidos de Polito!</p>
+                  <p>Nuestro arroz es la reminiscencia del sabor y la forma de cocinar los arroces de nuestros
+                    Xiringuitos Originales. Es uno de los platos mas elegidos de Polito!</p>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
@@ -365,7 +427,9 @@
               </h3>
               <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="p-3">
-                  <p>Más refrescante que el mar, el Blue Gin de Polito con frutos rojos es imprescindible. Se disfruta aún mas cuando cae el sol y te acompaña nuestro característico ambiente relajado. ¿A qué esperas para probarlo?</p>
+                  <p>Más refrescante que el mar, el Blue Gin de Polito con frutos rojos es imprescindible. Se disfruta
+                    aún mas cuando cae el sol y te acompaña nuestro característico ambiente relajado. ¿A qué esperas
+                    para probarlo?</p>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
@@ -388,13 +452,13 @@
               <p>Castelldefels</p>
             </div>
           </div>
-        
+
 
           <div class="col-md-6 col-lg-4 mb-5 " data-aos="fade" data-aos-delay="400">
             <div class="footer-widget contacto">
 
               <h3>Contacto</h3>
-              <p class="contact-email">mpolitoandco@gmail.com</p>
+              <p class="contact-email">info@politocastelldefels.com</p>
               <p class="contact-email"></p>
               <p class="contacto">Móvil :.638 265 261</p>
               <p class="contacto">Teléfono :.932 694 812</p>
@@ -414,9 +478,8 @@
 
         <p class="footer-text col-md-12">
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          Copyright &copy;<script>
-            document.write(new Date().getFullYear());
-          </script> All rights reserved | <a class="link-collabo" href="https://collabo.studio"> <img src="./img/logoiso.png" alt=""> </a></a>
+          Copyright &copy; 2020 All rights reserved | <a class="link-collabo" href="https://collabo.studio"> <img
+              src="./img/logoiso.png" alt=""> </a></a>
           <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
       </div>
@@ -433,12 +496,19 @@
 
 
   <script>
-    let navlinks = document.getElementById('navlinks').children;
-    [...navlinks].forEach(x => {
-      x.addEventListener("click", () => {
-        console.log("asd")
-      })
-    })
+    const replacePic = () => {
+      let originals = document.getElementsByClassName('imgReplace')
+      if (window.innerWidth < 600) {
+        [...originals].forEach(x=>{
+          let source = x.src
+          let ns = source.split('.jpg')
+          
+          x.src = ns[0]+"b.jpg"
+          console.log(x.src)
+        })
+      }
+    }
+    replacePic()
 
     const changePerder = (number) => {
       let perderImg = document.getElementById('perderImg')
@@ -526,11 +596,22 @@
   <script src="js/jquery.stellar.min.js"></script>
 
   <script src="js/aos.js"></script>
+  <script src="js/slider.js"></script>
 
 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-51Q5FZ68V7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-51Q5FZ68V7');
   </script>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

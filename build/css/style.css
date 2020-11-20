@@ -248,6 +248,10 @@ textarea.form-control {
     font-size: 30px;
     filter: invert(13%) sepia(73%) saturate(1753%) hue-rotate(188deg) brightness(98%) contrast(99%);
 }
+.site-header.scrolled .menusvg {
+    filter: none
+
+}
 
 .site-header.scrolled .site-nav-toggle {
     top: -5px;
@@ -297,6 +301,10 @@ textarea.form-control {
 }
 
 .half .text {
+    padding: 5%;
+    background: #fff;
+}
+.half .text2 {
     padding: 7%;
     background: #fff;
 }
@@ -1556,6 +1564,13 @@ textarea.form-control {
     justify-content: center;
 }
 
+.menusvg{
+    width: 30px;
+    margin-bottom: 10px;
+    filter: invert(100%) brightness(98%) contrast(99%);
+
+}
+
 div#menu-display {
     min-height: 100vh;
     display: flex;
@@ -1612,7 +1627,7 @@ div.menu-container h5 {
 
 div#platos {
     display: flex;
-    height: 83vh;
+    height: 79vh;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -1681,7 +1696,7 @@ div.titulo-platos {
     margin: auto;
     width: 30%;
     justify-content: space-between;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 #buttons-platos * {
@@ -1696,8 +1711,19 @@ div.titulo-platos {
     flex-direction: column;
     text-align: center;
     width: 35%;
-    margin-top: 3vw;
+    margin-top: 30vh;
 }
+.description-platos *{
+    font-size: x-large ;
+}
+@media only screen and (max-width: 600px) {
+    .description-platos {
+        margin-top: 3vw;
+    }
+    .description-platos *{
+        font-size: normal ;
+    }
+  }
 /* 
 .description-platos h4 {
     /* margin: 10px auto 60px auto; }*/
@@ -1758,7 +1784,7 @@ div.titulo-platos {
 }
 
 .lugar-slice {
-    background: url('../img/curve_line.svg') repeat-x;
+    background: url('../img/curve_line.svg') repeat-x !important;
     height: 110px;
 }
 
@@ -1797,8 +1823,13 @@ html {
     border: 2px solid #efc993;
     background-color:white !important;
     color: #b3874a;
-    padding: 4%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
     font-weight:400;
+}
+.dos{
+    width: 50%;
 }
 .contacto {
     text-decoration: none !important;
