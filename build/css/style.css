@@ -1821,6 +1821,11 @@ div.titulo-platos {
     font-size: 14px;
 }
 
+iframe {
+    width: 40vw;
+
+}
+
 @media only screen and (max-width: 600px) {
     .description-platos {
         margin-top: 3vw;
@@ -1828,6 +1833,10 @@ div.titulo-platos {
 
     .description-platos * {
         font-size: normal;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
 
@@ -1950,3 +1959,4 @@ html {
     text-decoration: none !important;
     color: #efc993 !important;
 }
+
