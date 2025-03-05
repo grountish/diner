@@ -237,7 +237,7 @@ textarea.form-control {
 
 .site-header.scrolled {
     position: fixed;
-    padding: 1em 30px;
+    padding: .1em 30px;
     top: 0;
     background: #fff;
     -webkit-transition: .0s all ease;
@@ -262,7 +262,7 @@ textarea.form-control {
     line-height: 1.2;
     display: inline-block;
     position: relative;
-    padding: 10px 20px;
+    padding: 0px 17px;
     color: #000;
     font-size: 30px;
     filter: invert(13%) sepia(73%) saturate(1753%) hue-rotate(188deg) brightness(98%) contrast(99%);
@@ -449,7 +449,12 @@ textarea.form-control {
 
 .site-footer p {
     font-weight: 500;
-    font-size: 14px
+    font-size: 14px;
+    text-align: left;
+}
+
+.site-footer img {
+    margin-right: auto;
 }
 
 .site-footer .footer-widget h3 {
@@ -1163,7 +1168,7 @@ textarea.form-control {
 
 @media (min-width: 768px) {
     .cover_1 .heading {
-        font-size: 50px;
+        font-size: 49px;
         line-height: 1.5;
     }
 }
@@ -1660,12 +1665,13 @@ textarea.form-control {
 }
 
 div#menu-display {
-    min-height: 100vh;
+    min-height: 94vh;
     display: flex;
     flex-direction: column;
     background-size: cover;
     background: url('../img/curve_line.svg') repeat-x top;
     margin-top: 4vh;
+    padding-bottom: 2rem;
 }
 
 #buttons-container {
@@ -1715,18 +1721,24 @@ div.menu-container h5 {
 #img-3,
 #img-4,
 #img-5,
+#img-6,
+#img-7,
+#img-8,
 #platos-2,
 #platos-3,
 #platos-4,
-#platos-5 {
+#platos-5,
+#platos-6,
+#platos-7,
+#platos-8 {
     display: none;
 }
 
 div#platos {
     display: flex;
-    height: 79vh;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     text-align: center;
     width: 100%;
     color: black;
@@ -1744,11 +1756,15 @@ div#platos {
     display: flex;
     flex-direction: column;
 }
+.clandestina-sm, .entorno-sm {
+    display: none !important;
+}
 
 @media only screen and (max-width: 660px) {
     #platos {
         flex-direction: column-reverse;
         height: auto !important;
+        padding: 0 1rem;
     }
 
     div.platos-sections {
@@ -1757,7 +1773,15 @@ div#platos {
     }
 
     #buttons-platos {
-        margin-top: 90px !important;
+        margin-top: 9px !important;
+    }
+
+    #buttons-platos {
+        width: 80% !important;
+    }
+
+    #buttons-platos div {
+        margin: 0 2px !important;
     }
 
     .parr-description {
@@ -1765,20 +1789,66 @@ div#platos {
     }
 
     .platos-container {
-        padding-top: 30px !important;
+        height: 60vh;
+        padding: 5rem auto;
+    }
+
+    #platos h4 {
+        font-size: 24px !important;
     }
 
     .description-platos {
         width: 90% !important;
+        font-size: 15px !important;
+    }
+
+    .description-platos {
+        margin-top: 3vw;
+    }
+
+    .description-platos * {
+        font-size: normal;
+    }
+
+    .platos-image {
+        width: 100% !important;
+    }
+
+    .cover_1 .heading {
+        font-size: 25px;
+    }
+
+    .services-section {
+        flex-direction: column;
+    }
+
+    .services-section>* {
+        width: auto !important;
+    }
+
+    .accordion-item h3 {
+        font-size: 17px;
+    }
+
+    .entorno,
+    .clandestina {
+        display: none !important;
+    }
+
+    .titulo-platos h1 {
+        font-size: 2rem !important;
+        padding-top: 1rem;
     }
 }
+
+
 
 .description-platos-container {
     font-size: 12px;
 }
 
 #platos h4 {
-    color: gray;
+    color: #2b2929;
     font-size: 31px;
 }
 
@@ -1796,10 +1866,10 @@ div.titulo-platos {
 
 #buttons-platos {
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     width: 30%;
     justify-content: space-between;
-    margin-top: 2%;
+
 }
 
 #buttons-platos * {
@@ -1809,36 +1879,19 @@ div.titulo-platos {
 }
 
 .description-platos {
-    justify-content: center;
+    justify-content: left;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    text-align: center;
     width: 35%;
-    margin-top: 30vh;
+    margin-top: 2rem;
+    color: #2b2929;
 }
 
 .description-platos * {
-    font-size: 14px;
+    font-size: 16px;
 }
 
-iframe {
-    width: 40vw;
-
-}
-
-@media only screen and (max-width: 600px) {
-    .description-platos {
-        margin-top: 3vw;
-    }
-
-    .description-platos * {
-        font-size: normal;
-    }
-
-    iframe {
-        width: 100%;
-    }
-}
 
 /* 
 .description-platos h4 {
@@ -1846,7 +1899,6 @@ iframe {
 
 
 #description-platos-container {
-    justify-content: center;
     display: flex;
 }
 
@@ -1890,13 +1942,12 @@ iframe {
 }
 
 .description-platos-container {
-    justify-content: center;
     display: flex;
 }
 
 .platos-image {
-    width: 570px;
-    margin: 4% auto;
+    width: 1000px;
+    margin: 1% auto;
 }
 
 #lugar {
@@ -1930,6 +1981,7 @@ html {
 
 .flexfooter {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -1960,3 +2012,166 @@ html {
     color: #efc993 !important;
 }
 
+.services-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem;
+    background: url(../img/curve_line.svg) repeat-x bottom;
+    align-content: space-around;
+}
+
+.services-section>* {
+    width: 18%;
+}
+
+.entorno,
+.clandestina {
+    width: 100%;
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.entorno {
+    max-height: 1335px;
+    margin-bottom: 6rem;
+}
+
+.entorno .grid,
+.clandestina .grid {
+    display: flex;
+    justify-content: center;
+}
+
+.grid>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.entorno-description,
+.clandestina-description {
+    height: 345px;
+    text-align: left;
+    margin-top: 2.6rem;
+}
+
+.entorno-sm .entorno-description,
+.clandestina-sm .clandestina-description {
+    height: 325px;
+    text-align: left;
+    margin-top: 2.6rem;
+}
+
+
+.clandestina-sm .clandestina-description {
+    height: 355px;
+}
+
+.entorno-description p,
+.clandestina-description p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.entorno-description p {
+    width: 260px;
+}
+
+
+
+.entorno-first-col,
+.clandestina-first-col {
+    width: 309px;
+}
+
+.entorno-second-col,
+.clandestina-second-col {
+    width: 425px;
+}
+
+.entorno-third-col,
+.clandestina-third-col {
+    width: 441px;
+}
+
+.entorno img,
+.clandestina img {
+    height: auto;
+    margin-top: 2rem;
+}
+
+.clandestina-sm .row img {
+    width: 147px;
+    margin-bottom: .5rem;
+}
+
+.entorno-sm img {
+    width: 167px;
+}
+
+.entorno-sm,
+.clandestina-sm {
+    padding: 5rem 2rem;
+}
+
+.entorno-sm .row div {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.clandestina-sm .row div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.w-full {
+    width: 100%;
+}
+
+#loquenotepuedesperder,
+.clandestina,
+.clandestina-sm {
+    background: url(../img/curve_line.svg) repeat-x top;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    width: 46vw;
+    margin: 0 0 0 1rem;
+    padding: 0 0 0 10rem;
+}
+
+.footer-widget {
+    text-align: left;
+}
+
+.disclaimer {
+    display: flex;
+    flex-direction: column;
+}

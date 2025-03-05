@@ -19,6 +19,7 @@
   <!-- Theme Style -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slider.css">
+
 </head>
 
 <body>
@@ -32,7 +33,8 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li class="js-site-nav-toggle"><a href="#platoss">Platos destacados</a></li>
           <li class="js-site-nav-toggle"><a href="#lugar">El entorno</a></li>
-          <li class="js-site-nav-toggle"><a href="#menu-display">Nuestros menús para grupos</a></li>
+          <li class="js-site-nav-toggle"><a href="#menu-display">Menús para grupos</a></li>
+          <li class="js-site-nav-toggle"><a href="#clandestina">La Clandestina</a></li>
           <li class="js-site-nav-toggle"><a href="#loquenotepuedesperder">Lo que no te puedes perder</a></li>
           <li class="js-site-nav-toggle"><a href="#contacto">Contacto</a></li>
         </ul>
@@ -68,9 +70,13 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-12" data-aos="fade-up">
-                <h2 class="heading" id="main-header">Si te apetece disfrutar de nuestro Polito, encontrarás un entorno
-                  privilegiado, una atmósfera relajada, buena música, buenas vibraciones y sobretodo, buena comida.
-                  Los momentos en Polito son layed out...
+                <h2 class="heading" id="main-header">Polito es un espacio creado en armonía con el entorno y un aire
+                  mediterráneo, que te invita a disfrutar de una comida
+                  fresca, combinando sabores en un ambiente relajado frente a la playa. <br>
+                  Todos los días nuestra terraza se vuelve un lugar de preferencia para todo aquel que busca una
+                  propuesta diferente en
+                  Castelldefels.
+
               </div>
             </div>
           </div>
@@ -78,47 +84,61 @@
       </div> <!-- .cover_1 -->
 
       <div class="section services-section">
-        <div class="container">
 
-          <div class="row"><a href="#platoss">
-              <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                <div class="media feature-icon d-block text-center">
-                  <div class="icon">
-                    <span><img class="sectionsIcon strongIcon" src="./img/losprodIcon.png" alt=""></span>
-                  </div>
-                  <div class="media-body">
-                    <h3>Platos destacados</h3>
-                  </div>
-                </div>
-            </a>
-          </div>
+
+
+
+        <div data-aos="fade-up" data-aos-delay="100">
           <a href="#lugar">
-            <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-              <div class="media feature-icon d-block text-center">
-                <div class="icon">
-                  <span><img class="sectionsIcon strongIcon" src="./img/lugaricon.png" alt=""></span>
-                </div>
-                <div class="media-body">
-                  <h3>El entorno</h3>
-
-                </div>
+            <div class="media feature-icon d-block text-center">
+              <div class="icon">
+                <span><img class="sectionsIcon strongIcon" src="./img/lugaricon.png" alt=""></span>
               </div>
+              <div class="media-body">
+                <h3>El entorno</h3>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <a href="#lugar">
+            <div class="media feature-icon d-block text-center">
+              <div class="icon">
+                <span><img class="sectionsIcon strongIcon" src="./img/losprodIcon.png" alt=""></span>
+              </div>
+              <div class="media-body">
+                <h3>Platos destacados</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="300">
           <a href="#menu-display">
             <div class="media feature-icon d-block text-center">
               <div class="icon">
                 <span><img class="sectionsIcon" src="./img/menuIcon.png" alt=""></span>
               </div>
               <div class="media-body">
-                <h3>Nuestros Menús para grupos</h3>
-
+                <h3>Menús para grupos</h3>
               </div>
             </div>
           </a>
         </div>
-        <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+
+        <div data-aos="fade-up" data-aos-delay="300">
+          <a href="#clandestina">
+            <div class="media feature-icon d-block text-center">
+              <div class="icon">
+                <span><img class="sectionsIcon" src="./img/clandestina.svg" alt=""></span>
+              </div>
+              <div class="media-body">
+                <h3>La clandestina</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="500">
           <a href="#loquenotepuedesperder">
             <div class="media feature-icon d-block text-center">
               <div class="icon">
@@ -126,98 +146,141 @@
               </div>
               <div class="media-body">
                 <h3>Lo que no te puedes perder</h3>
-
               </div>
             </div>
           </a>
         </div>
+
       </div>
+
+
     </div>
     <div id="platoss"></div>
   </div> <!-- .section -->
+  <div class="entorno">
+    <div class="grid">
+      <div class="entorno-first-col">
+        <div class="entorno-description">
+          <div>
+            <h4>El Entorno</h4>
+          </div>
+          <p>
+            Situado en una duna con vida propia, en plena naturaleza, donde los encuentros inesperados son parte de la
+            experiencia.
+            Acompañado de mar, sol y excelente música.
+
+          </p>
+          
+        </div>
+        <img src="./img/entorno1.jpg" alt=""><img src="./img/entorno2.jpg" alt="">
+      </div>
+      <div class="entorno-second-col"><img src="./img/entorno3.jpg" alt=""><img src="./img/entorno4.jpg" alt=""><img
+          src="./img/entorno5.jpg" alt=""></div>
+      <div class="entorno-third-col"><img src="./img/entorno6.jpg" alt=""><img src="./img/entorno7.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="entorno-sm">
+    <div class="entorno-description">
+      <div>
+        <h4>El Entorno</h4>
+      </div>
+      <p>
+        Situado en una duna con vida propia, en plena naturaleza, donde los encuentros inesperados son parte de la
+        experiencia.
+        Acompañado de mar, sol y excelente música.
+
+      </p>
+      
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img src="./img/entorno3.jpg" alt=""><img src="./img/entorno4.jpg" alt="">
+        <img src="./img/entorno5.jpg" alt=""><img src="./img/entorno2.jpg" alt="">
+
+      </div>
+      <div class="col-6">
+        <img src="./img/entorno6.jpg" alt=""><img src="./img/entorno7.jpg" alt=""><img src="./img/entorno-1-sm.jpg"
+          alt="">
+      </div>
+    </div>
+  </div>
 
   <div class="platos-container">
     <div class="titulo-platos">
       <h1>Platos destacados</h1>
-      <!-- <h4>descripcion descripcion descripcion</h4> -->
     </div>
     <div id="platos" data-aos="fade" data-aos-delay="400">
-
-      <div class="platos-sections">
+      <div class="flex-col mx-auto w-full">
         <div id="buttons-platos">
           <div id="p1" class="activep" onclick="platosSwitcher(1)">•</div>
           <div id="p2" onclick="platosSwitcher(2)">•</div>
           <div id="p3" onclick="platosSwitcher(3)">•</div>
           <div id="p4" onclick="platosSwitcher(4)">•</div>
+          <div id="p4" onclick="platosSwitcher(5)">•</div>
+          <div id="p4" onclick="platosSwitcher(6)">•</div>
+          <div id="p4" onclick="platosSwitcher(7)">•</div>
+          <div id="p4" onclick="platosSwitcher(8)">•</div>
         </div>
-        <div id="img-platos-container">
-          <img src="./img/batch_THE_2745.jpg" id="img-1" alt="" class="platos-image fadeI">
-          <img src="./img/batch_THE_2875.jpg" id="img-2" alt="" class="platos-image fadeI">
-          <img src="./img/batch_THE_2951.jpg" id="img-3" alt="" class="platos-image fadeI">
-          <img src="./img/tortilla.jpg" id="img-4" alt="" class="platos-image fadeI">
+
+        <div class="mx-auto">
+
+          <div id="img-platos-container">
+            <img src="./img/platos-1.jpg" id="img-1" alt="" class="platos-image fadeI">
+            <img src="./img/platos-2.jpg" id="img-2" alt="" class="platos-image fadeI">
+            <img src="./img/platos-3.jpg" id="img-3" alt="" class="platos-image fadeI">
+            <img src="./img/platos-4.jpg" id="img-4" alt="" class="platos-image fadeI">
+            <img src="./img/platos-5.jpg" id="img-5" alt="" class="platos-image fadeI">
+            <img src="./img/platos-6.jpg" id="img-6" alt="" class="platos-image fadeI">
+            <img src="./img/platos-7.jpg" id="img-7" alt="" class="platos-image fadeI">
+            <img src="./img/platos-8.jpg" id="img-8" alt="" class="platos-image fadeI">
+
+          </div>
+
+
+
+          <div class="description-platos-container" id="description-platos">
+            <div class="description-platos fadeUp" id="platos-1">
+              <h4>Socarrat de mar</h4>
+              <p class="parr-description">¡La estrella del menú! Arroz de Mar socarrat by Polito… diferente a todos.
+              </p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-2">
+              <h4>Gyozas de Langostino, con soja, ponzu y sésamo</h4>
+              <p class="parr-description">Un #must para amantes del #asianfood.</p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-3">
+              <h4>Coca de Vidre de Mossèn, con tomate</h4>
+              <p class="parr-description">La Coca de Mossèn ¡El pan hecho poesía! Sabor, textura y aroma inigualables..
+              </p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-4">
+              <h4>Costillar de cerdo con salsa BBQ, patatas al horno y puré de boniato</h4>
+              <p class="parr-description">El plato imprescindible para los #meatlovers</p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-5">
+              <h4>Rodaballo a la plancha con meunière de alcaparras</h4>
+              <p class="parr-description">¡El más top de nuestra pesca del día!</p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-6">
+              <h4>Tagliata de ternera a la toscana con rúcula y parma</h4>
+              <p class="parr-description">Un clásico de la cocina mediterránea</p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-7">
+              <h4>Verduras al dente salteadas al Wok</h4>
+              <p class="parr-description">Deliciosas y #healthy… ¡Un auténtico veggie pleasure!</p>
+            </div>
+            <div class="description-platos fadeUp" id="platos-8">
+              <h4>Tartar de Salmón</h4>
+              <p class="parr-description">Simpleza que despierta una explosión de frescura y sabor</p>
+            </div>
+          </div>
         </div>
+
+        <!-- <div id="lugar"></div> -->
+
       </div>
-      <div class="platos-sections section2">
-
-        <div class="description-platos-container" id="description-platos">
-          <div class="description-platos fadeUp" id="platos-1">
-            <h4>Pan con Tomate</h4>
-            <p class="parr-description">Coca de vidre del Mossèn untada con tomate de rama y aceite virgen de oliva
-              arbequina.
-            </p>
-          </div>
-          <div class="description-platos fadeUp" id="platos-2">
-            <h4>Cazuela de pescaditos fritos</h4>
-            <p class="parr-description">rebozada con harina de garbanzos, harina de trigo y una suave fritura. El toque
-              final con un twist de lima rallada.</p>
-          </div>
-          <div class="description-platos fadeUp" id="platos-3">
-            <h4>Burger de ternera</h4>
-            <p class="parr-description">Nuestra hamburguesa gruesa de ternera, con sus apetecibles complementos. Te
-              sorprenderá al llegar a la mesa.</p>
-          </div>
-          <div class="description-platos fadeUp" id="platos-4">
-            <h4>Tortilla de patata trufada</h4>
-            <p class="parr-description">Es indescriptible. Solo tienes que probarla</p>
-          </div>
-
-        </div>
-        <div id="lugar"></div>
-      </div>
-
     </div>
   </div>
-  <div class="lugar-slice"></div>
-  <div class="site-half-wrap d-block d-lg-flex lugar-container">
-    <div class="block-half" data-aos="fade">
-      <div class="image-bg-fullwidth" style="background-image: url(img/sitio4.JPG);"></div>
-      <div class="half d-block d-lg-flex">
-        <div class="text">
-          <h2 class="mb-2">Polito</h2>
-          <p class="mb-2">Ubicado en un lugar único, Polito te invita a disfrutar de una experiencia gastronómica
-            fresca, combinando sabores y texturas, en un ambiente relajado frente a la playa de Castelldefels. Al
-            atardecer, nuestra terraza se vuelve un espacio de preferencia para todo aquel que busca una propuesta
-            diferente.</p>
-          <div class="boton dos" onclick="openModal();currentSlide(1)">Descubrir</div>
-        </div>
-        <div class="image" style="background-image: url(img/sitio1.JPG)"></div>
-      </div>
-    </div>
-    <div class="block-half" data-aos="fade">
-      <div class="half d-block d-lg-flex">
-        <div class="text">
-          <h2 class="mb-4">La Clandestina</h2>
-          <p class="mb-4">La Clandestina es un espacio privilegiado en Polito donde disfrutar de una vista fantástica de
-            la playa de Castelldefels. Tanto es así, que se ha vuelto la preferida de los eventos privados. Consulta por
-            su disponibilidad.</p>
-          <a href="tel:+932694812" class="boton">Contacto</a>
-        </div>
-        <div class="image" style="background-image: url(img/sitio2.JPG);"></div>
-      </div>
-      <div class="image-bg-fullwidth " style="background-image: url(img/clandestin1.jpg);"></div>
-    </div>
-  </div>
-  
 
 
   <!-- The Modal/Lightbox -->
@@ -290,20 +353,20 @@
           <h4> ENTRANTS / <i>ENTRANTES</i></h4>
           <h5>per compartir / <i>para compartir</i></h5>
           <p>
-            Els Edamame d'Ana amb sèsam i oli de tòfona<br><i>Los edamame de Ana con sésamo y aceite de trufa</i><br>
-            Patates Bután/<i>Patatas Bután</i><br>Coca de vidre del Mossèn<br>Burrata amb pesto ruca i espinacs baby
-            <br><i>Burrata con pesto rúcula y espiacas baby</i><br>Fingers de pollastre amb vinagreta
-            provençal<br><i>Fingers
-              de pollo con vinagreta provenzal</i>
+            Humus amb pebre vermell i oli de Kalamata<br><i>Humus con pimentón y aceite de Kalamata</i><br>
+            Braves de muntanya/<i>Bravas de montaña</i><br><br>
+            Provolone fos amb orenga i pebre negre/<i>Provolone fundido con orégano y pimienta negra</i>Musclos al vapor amb mòdena i vi blanc
+            <br><i>Mejillones al vapor con módena y vino blanco</i><br>Amanida Russa<br><i>Ensaladilla Rusa</i>
           </p>
         </div>
         <div class="menu-section">
           <h4>SEGONS / <i>SEGUNDOS</i></h4>
-          <h5>a escollir / <i>a escoger</i></h5>
-          <p>San Pere al forn amb patata, tomaquet i ceba<br><i>San Pedro al horno con patata, tomate y
-              cebolla</i><br>o<br>
-          <p>Melós Ibèric</p>
-          <i>Meloso Iberico</i>
+          <h5>per compartir centre taula / <i>para compartir centro mesa</i></h5>
+          <p>Arròs melos de gamba<br><i>Arroz meloso de gamba</i><br>
+          <p>Tàrtar de salmó amb guacamole/</p>
+          <i>Tartar de salmón con guacamole</i>
+          <p>Tagliata fiorentina amb ruca i parmigiano/</p>
+          <i>Tagliata Fiorentina con rúcula y parmigiano</i>
           <h4>POSTRES </h4>
           <p>Pastís de formatge</p> <i>Pastel de queso</i>
           <h4>CELLER / BODEGA</h4>
@@ -312,8 +375,10 @@
         <div class="menu-section">
           <h4> INCLOU / <i>INCLUYE</i></h4>
           <p> Cafè i aigua / <i>Café y agua</i></p>
-          <p>Celler i aigua: 1 ampolla per 3 persones<br><i>Bodega y agua: 1 botella cada 3 personas</i></p>
-          <h4>PREU/<i>PRECIO</i>: 33€ (10% IVA INCL.)</h4>
+          <p>Vi: 1 ampolla per 3 persones<br><i>Vino: 1 botella cada 3 personas</i></p>
+          <p>Aigüa una ampolla 1/2L per dos persones<br><i>/ Agua: botella 1/2L para dos personas</i></p>
+          <p>**Preguem comunicar intoleràncies/<br><i>Rogamos comunique intolerancias</i></p>
+          <h4>Consultar disponibilidad y precio</h4>
         </div>
       </div>
       <div id="m2" class="menu-container fadeI">
@@ -321,56 +386,19 @@
           <h4> ENTRANTS / <i>ENTRANTES</i></h4>
           <h5>per compartir / <i>para compartir</i></h5>
           <p>
-            Hummus amb pebre vermel i oli de Kalamata <br>
-            <i>Hummus con pimentón y aceite de Kalamata</i><br>
-            Braves de muntanya / <i>Bravas de Montaña</i><br> Provolone fos amb orenga i pebre negre <br>
-            <i>Provolone fundido con orégano y pimienta negra</i><br>
-
-            Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Amanida
-            Russa com li agrada a Joan<br>
-            <i>Ensaladilla Rusa como le gusta a Joan</i>
-
+            Carpaccio de carabasso amb parmigiano i pinyons<br><i>Carpaccio de calabacín con parmigiano y piñones</i><br>
+            Edamames cruixents amb sésam i oli de tófona negre/<i>Edamame crujientes con sésamo y aceite de trufa negra</i><br><br>
+            Humus amb pebre vermell i oli de Kalamata/<i>Humus con pimentón y aceite de Kalamata</i>Braves de muntanya
+            <br><i>Bravas de montaña</i><br>Amanida Russa<br><i>Ensaladilla Rusa</i>
           </p>
         </div>
         <div class="menu-section">
           <h4>SEGONS / <i>SEGUNDOS</i></h4>
-          <h5>per compartir / <i>para compartir</i></h5>
-          <p>Arròs de Mar socarrat / <i>Arroz de Mar socarrat</i></p>
-          <p>Tàrtar de salmó amb guacamole <br><i>Tartar de salmón con guacamole</i></p>
-          <p>Carpaccio de lacó <br><i>Carpaccio de lacón</i></p>
-          <h4>POSTRES </h4>
-          <p>Pastís de formatge</p> <i>Pastel de queso</i>
-          <h4>CELLER / BODEGA</h4>
-          <p>La Camioneta (D.O Rueda)<br>
-            Aviador (D.O Rioja)</p>
-        </div>
-        <div class="menu-section">
-          <h4> INCLOU / <i>INCLUYE</i></h4>
-          <p>Cafè i aigua / Café y agua</p>
-          <p>Celler i aigua: 1 ampolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
-          <h4>PREU/ <i>PRECIO</i>: 37€ (10% IVA INCL.)</h4>
-        </div>
-      </div>
-      <div id="m3" class="menu-container fadeI">
-        <div class="menu-section">
-          <h4> ENTRANTS /<i>ENTRANTES</i></h4>
-          <h5>per compartir / <i>para compartir</i></h5>
-          <p>
-            Musclos al vapor amb mòdena i vi blanc<br><i>Mejillones al vapor con Módena y vino blanco</i><br>Coca de
-            vidre del Mossèn<br>Hummus amb pebre vermel i oli de Kalamata <br><i>Hummus con pimentón y aceite de
-              Kalamata</i><br>Braves de muntanya / <i>Bravas de Montaña</i><br>Amanida Russa com li agrada a Joan<br>
-            <i>Ensaladilla Rusa como le gusta a Joan</i>
-          </p>
-        </div>
-        <div class="menu-section">
-          <h4>SEGONS / SEGUNDOS</h4>
-          <!-- test -->
-          <h5>a escollir / <i>a escoger</i></h5>
-          <p>San Pere al forn amb patata, tomaquet i ceba<br><i>San Pedro al horno con patata, tomate y
-              cebolla</i><br>o<br>
-          <p> Tagliata de vedella a la toscana<br>
-            <i> Tagliata de ternera a la toscana</i>
-          </p>
+          <h5>plat a escollir / <i>plato a escoger</i></h5>
+          <p>Sant Pere al forn amb patata,tomàquet i ceba<br><i>San Pedro al horno con patata,tomate y cebolla</i><br>
+            <p>o</p>
+          <p>Secret ibéric amb patates i pebrots del padró/</p>
+          <i>Secreto ibérico con patatas y pimientos del padrón</i>
           <h4>POSTRES </h4>
           <p>Pastís de formatge</p> <i>Pastel de queso</i>
           <h4>CELLER / BODEGA</h4>
@@ -378,13 +406,106 @@
         </div>
         <div class="menu-section">
           <h4> INCLOU / <i>INCLUYE</i></h4>
-          <p>Cafè i aigua / <i>Café y agua</i></p>
-          <p>Celler i aigua: 1 ampolla per 3 persones <i>Bodega y agua: 1 botella cada 3 personas</i></p>
-          <h4>PREU/ <i>PRECIO</i>: 35€ (10% IVA INCL.)</h4>
+          <p> Cafè i aigua / <i>Café y agua</i></p>
+          <p>Vi: 1 ampolla per 3 persones<br><i>Vino: 1 botella cada 3 personas</i></p>
+          <p>Aigüa una ampolla 1/2L per dos persones<br><i>/ Agua: botella 1/2L para dos personas</i></p>
+          <p>**Preguem comunicar intoleràncies/<br><i>Rogamos comunique intolerancias</i></p>
+          <h4>Consultar disponibilidad y precio</h4>
+        </div>
+      </div>
+      <div id="m3" class="menu-container fadeI">
+        <div class="menu-section">
+          <h4> ENTRANTS / <i>ENTRANTES</i></h4>
+          <h5>per compartir / <i>para compartir</i></h5>
+          <p>
+            Edamame cruixents amb sésam, especies i oli de tòfona negre<br><i>Edamame crujientes, con sesamo,especies y aceite de trufa negro</i><br>
+            Musclos Thai amb llet de coco “una mica picants”/<i>Mejillones Thai con leche de coco “un poco picantes”</i><br><br>
+            Amanida Russa/<i>Ensaladilla Rusa</i>Burrata amb pesto ruca i espinacs baby
+            <br><i>Burrata con rúcula pesto y espinacas baby</i><br>Fingers de pollastre amb vinagreta provençal<br><i>Fingers de pollo con vinagreta provenzal</i>
+          </p>
+        </div>
+        <div class="menu-section">
+          <h4>SEGONS / <i>SEGUNDOS</i></h4>
+          <h5>plat a escollir / <i>plato a escoger</i></h5>
+          <p>Tartar de salmón con guacamole<br><i>Tartar de salmó amb guacamole</i><br>
+          <p>o</p>
+          <p>Melòs ibèric en dues coccións/</p>
+          <i>Meloso ibérico en dos cocciones</i>
+          <h4>POSTRES </h4>
+          <p>Pastís de formatge</p> <i>Pastel de queso</i>
+          <h4>CELLER / BODEGA</h4>
+          <p>La Camioneta (D.O Rueda)<br>Aviador (D.O Rioja)</p>
+        </div>
+        <div class="menu-section">
+          <h4> INCLOU / <i>INCLUYE</i></h4>
+          <p> Cafè i aigua / <i>Café y agua</i></p>
+          <p>Vi: 1 ampolla per 3 persones<br><i>Vino: 1 botella cada 3 personas</i></p>
+          <p>Aigüa una ampolla 1/2L per dos persones<br><i>/ Agua: botella 1/2L para dos personas</i></p>
+          <p>**Preguem comunicar intoleràncies/<br><i>Rogamos comunique intolerancias</i></p>
+          <h4>Consultar disponibilidad y precio</h4>
         </div>
       </div>
     </div>
   </div>
+  <div class="clandestina" id="clandestina">
+    <div class="grid">
+      <div class="clandestina-first-col">
+
+        <img src="./img/clandestina1.jpg" alt=""><img src="./img/clandestina2.jpg" alt="">
+      </div>
+      <div class="clandestina-second-col"><img src="./img/clandestina3.jpg" alt=""><img src="./img/clandestina4.jpg"
+          alt=""><img src="./img/clandestina5.jpg" alt=""></div>
+      <div class="clandestina-third-col"><img src="./img/clandestina6.jpg" alt="">
+        <div class="clandestina-description">
+          <div>
+            <h4>La Clandestina</h4>
+          </div>
+          <p>
+            La Clandestina de Polito es un espacio privilegiado de nuestro Xiringuito. Un lugar ideal donde podéis
+            realizar eventos
+            en un ambiente distendido con vistas fantásticas a la Playa.
+            Aquí podrás realizar tu evento privado para grupos de 20 a  40 comensales, y disfrutar de nuestros menús
+            para grupos. <br>
+
+            ¡Consulta por su disponibilidad!
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="clandestina-sm">
+    <div class="clandestina-description">
+      <div>
+        <h4>La Clandestina</h4>
+      </div>
+      <p>
+        La Clandestina de Polito es un espacio privilegiado de nuestro Xiringuito. Un lugar ideal donde podéis
+        realizar eventos
+        en un ambiente distendido con vistas fantásticas a la Playa.
+        Aquí podrás realizar tu evento privado para grupos de 20 a  40 comensales, y disfrutar de nuestros menús
+        para grupos. <br>
+
+        ¡Consulta por su disponibilidad!
+
+      </p>
+
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <img src="./img/clandestina3.jpg" alt=""><img src="./img/clandestina4.jpg" alt="">
+
+
+      </div>
+      <div class="col-6">
+        <img src="./img/clandestina6.jpg" alt="">
+      </div>
+    </div>
+    <img class="w-full" src="./img/clandestina-sm-5.jpg" alt="">
+  </div>
+
   <div class="section" id="loquenotepuedesperder">
     <div class="container">
       <div class="row justify-content-center mb-5" data-aos="fade-up">
@@ -396,34 +517,30 @@
       </div>
       <div class="row large-gutters">
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <img src="img/arrozdemar.jpg" id="perderImg" alt="Image placeholder" class="img-fluid rounded">
+          <img src="img/perder1.jpg" id="perderImg" alt="Image placeholder" class="img-fluid rounded">
         </div>
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="accordion" id="accordion">
 
             <div class="accordion-item">
-              <h3 class="mb-0" onclick="changePerder(2)">
-                <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false"
-                  aria-controls="collapseTwo">Gyozas de langostinos <span class="icon"></span></a>
+              <h3 class="mb-0" onclick="changePerder(1)">
+                <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true"
+                  aria-controls="collapseOne">Nuestro Socarrat de mar <span class="icon"></span></a>
               </h3>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="p-3">
-                  <p>La Gyoza es uno de los platos mas tradicionales de la cocina oriental, son unos dumplings de fina y
-                    elástica masa de arroz con infinidad de rellenos.
-                    Nuestras Gyozas de langostino con soja, ponzu y sésamo son una experiencia para todos los sentidos
-                    que no puedes dejar pasar.</p>
+                  <p>Una receta de la familia recuperada y elaborada con amor y cariño</p>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
             <div class="accordion-item">
-              <h3 class="mb-0" onclick="changePerder(1)">
-                <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true"
-                  aria-controls="collapseOne">Arroz de mar del Jose<span class="icon"></span></a>
+              <h3 class="mb-0" onclick="changePerder(2)">
+                <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false"
+                  aria-controls="collapseTwo">¡La hora del vermut!<span class="icon"></span></a>
               </h3>
-              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="p-3">
-                  <p>Nuestro arroz es la reminiscencia del sabor y la forma de cocinar los arroces de nuestros
-                    Xiringuitos Originales. Es uno de los platos mas elegidos de Polito!</p>
+                  <p>brutal, soleado y buen ambiente</p>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
@@ -431,13 +548,12 @@
             <div class="accordion-item">
               <h3 class="mb-0" onclick="changePerder(3)">
                 <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button"
-                  aria-expanded="false" aria-controls="collapseThree">Blue Gin <span class="icon"></span></a>
+                  aria-expanded="false" aria-controls="collapseThree">Un buen cóctel al atardecer<span
+                    class="icon"></span></a>
               </h3>
               <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="p-3">
-                  <p>Más refrescante que el mar, el Blue Gin de Polito con frutos rojos es imprescindible. Se disfruta
-                    aún mas cuando cae el sol y te acompaña nuestro característico ambiente relajado. ¿A qué esperas
-                    para probarlo?</p>
+                  <p>…mi preferido: el frozen margarita.</p>
                 </div>
               </div>
             </div> <!-- .accordion-item -->
@@ -451,7 +567,7 @@
   <footer id="contacto">
     <div class="site-footer">
       <div class="container">
-        <div class="row  mb-5 flexfooter">
+        <div class="row  mb-5 flex-around">
           <div class="col-md-6 col-lg-4 mb-5" data-aos="fade" data-aos-delay="100">
             <div class="footer-widget">
               <a href="index.html"><img class="site-logo-footer" src="./img/logo.png" alt=""></a>
@@ -473,19 +589,23 @@
               <p class="contact-email"></p>
               <p class="contacto">Reservas : 638 265 261</p>
             </div>
-            <div style="padding-top: 5px">
-              <p style="font-size: 12px">Aquesta actuació està impulsada i subvencionada pel Servei Públic d´Ocupació de
-                Catalunya, i finançada al 100% pel Fons Social Europeu com a part de la resposta de la Unió Europea a la
+            <div style="padding-top: 5px" class="disclaimer">
+              <p style="font-size: 12px">Aquesta actuació està impulsada i subvencionada pel Servei Públic d´Ocupació
+                de
+                Catalunya, i finançada al 100% pel Fons Social Europeu com a part de la resposta de la Unió Europea a
+                la
                 pandèmia de COVID-19</p>
               <img src="img/finans.png" alt="UE" style="width: 200px; padding-top: 5px;">
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 mb-5 mr-1" data-aos="fade" data-aos-delay="400">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.003827240806!2d1.9649634764157298!3d41.26525257131574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a483e6737a97c5%3A0x674374014e930aeb!2sPolito!5e0!3m2!1ses!2ses!4v1723817917860!5m2!1ses!2ses" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="" data-aos="fade" data-aos-delay="400">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.003827240806!2d1.9649634764157298!3d41.26525257131574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a483e6737a97c5%3A0x674374014e930aeb!2sPolito!5e0!3m2!1ses!2ses!4v1723817917860!5m2!1ses!2ses"
+              width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-
     </div>
   </footer>
 
@@ -494,10 +614,8 @@
       <div class="row">
 
         <p class="footer-text col-md-12">
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           Copyright &copy; 2024 All rights reserved | <a class="link-collabo" href="https://collabo.studio"> <img
               src="./img/logoiso.png" alt=""> </a></a>
-          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </p>
       </div>
     </div>
@@ -532,17 +650,17 @@
       let perderImg = document.getElementById('perderImg')
       switch (number) {
         case 1:
-          perderImg.src = "img/arrozdemar.jpg"
+          perderImg.src = "img/perder1.jpg"
           break;
         case 2:
-          perderImg.src = "img/gyozas.jpg"
+          perderImg.src = "img/perder2.jpg"
           break;
         case 3:
           perderImg.src = "img/perder3.jpg"
           break;
 
         default:
-          perderImg.src = "img/arrozdemar.jpg"
+          perderImg.src = "img/perder1.jpg"
           break;
       }
     }
